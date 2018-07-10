@@ -165,7 +165,8 @@
                 </li>
                 <li class="pnavbar-bottom__down">
                     <a class="pnavbar-bottom__down--link" href="#dev">
-                        <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1"
+                             xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
                              xml:space="preserve">
@@ -222,27 +223,16 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper swiper__container--wrapper">
                     <!-- Slides -->
-                    <?php $projects = array_diff(scandir('developing'), array('.', '..', 'backup', 'index.php')); ?>
-                    <?php foreach ($projects as $project): ?>
+                    <?php $c = array_diff(scandir('developing'), array('.', '..', 'backup', 'index.php')); ?>
+                    <?php foreach ($c as $d): ?>
                         <div class="swiper-slide swiper__container--slide">
-                            <a href="<?php echo "developing/$project" ?>"><?php echo "$project" ?></a>
+                            <a href="<?php echo "developing/$d" ?>"><?php echo strlen($d) > 13 ? substr($d, 0, 10) . '...' : $d ?></a>
                         </div>
                     <?php endforeach; ?>
                 </div>
             </div>
             <!-- If we need pagination -->
             <div id="developing__pagination" class="swiper-pagination swiper__pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <!--
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            -->
-
-            <!-- If we need scrollbar -->
-            <!--
-            <div class="swiper-scrollbar swiper__scrollbar"></div>
-            -->
         </div>
     </div>
     <div class="pbox__bottom">
@@ -259,7 +249,8 @@
                 </li>
                 <li class="pnavbar-bottom__down">
                     <a class="pnavbar-bottom__down--link" href="#about">
-                        <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1"
+                             xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
                              xml:space="preserve">
