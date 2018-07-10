@@ -1,4 +1,4 @@
-<?php #!/usr/bin/env php ?>
+#!/usr/bin/env php
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -135,7 +135,7 @@
     <div class="pbox__middle">
         <div class="pbox__middle--content">
             <!-- Slider main container -->
-            <div class="swiper-container swiper__container">
+            <div id="testing" class="swiper-container swiper__container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper swiper__container--wrapper">
                     <!-- Slides -->
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination swiper__pagination"></div>
+            <div id="testing__pagination" class="swiper-pagination swiper__pagination"></div>
         </div>
     </div>
     <div class="pbox__bottom">
@@ -218,7 +218,7 @@
     <div class="pbox__middle">
         <div class="pbox__middle--content">
             <!-- Slider main container -->
-            <div class="swiper-container swiper__container">
+            <div id="developing" class="swiper-container swiper__container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper swiper__container--wrapper">
                     <!-- Slides -->
@@ -231,7 +231,7 @@
                 </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination swiper__pagination"></div>
+            <div id="developing__pagination" class="swiper-pagination swiper__pagination"></div>
 
             <!-- If we need navigation buttons -->
             <!--

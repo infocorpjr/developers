@@ -11,15 +11,26 @@
  */
 import Swiper from 'swiper';
 
-const mySwiper = new Swiper('.swiper-container', {
+const testing = new Swiper('#testing', {
     // Optional parameters
     direction: 'horizontal',
     touchEventsTarget: 'wrapper',
     loop: false,
-
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+        el: '#testing__pagination',
+        clickable: true
+    },
+});
+
+const developing = new Swiper('#developing', {
+    // Optional parameters
+    direction: 'horizontal',
+    touchEventsTarget: 'wrapper',
+    loop: false,
+    // If we need pagination
+    pagination: {
+        el: '#developing__pagination',
+        clickable: true
     },
 });
