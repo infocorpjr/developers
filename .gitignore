@@ -1,7 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+# Diretórios a serem ignorados pelo GIT.
 .idea
 node_modules
 developing
 testing
-# Arquivo gerado pelo php
+
+# Arquivos a serem ignorados pelo GIT.
 index.html

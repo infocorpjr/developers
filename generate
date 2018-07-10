@@ -139,10 +139,10 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper swiper__container--wrapper">
                     <!-- Slides -->
-                    <?php $projects = array_diff(scandir('testing'), array('.', '..', 'backup', 'index.php')); ?>
-                    <?php foreach ($projects as $project): ?>
+                    <?php $a = array_diff(scandir('testing'), array('.', '..', 'backup', 'index.php')); ?>
+                    <?php foreach ($a as $b): ?>
                         <div class="swiper-slide swiper__container--slide">
-                            <a href="<?php echo "testing/$project" ?>"><?php echo "$project" ?></a>
+                            <a href="<?php echo "testing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
                         </div>
                     <?php endforeach; ?>
                 </div>
