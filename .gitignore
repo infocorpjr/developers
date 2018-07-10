@@ -1,4 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea
 node_modules
 developing
 testing
+# Arquivo gerado pelo php
+index.html
