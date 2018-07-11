@@ -27,7 +27,8 @@
     <meta property="og:title" content="Infocorp Developer Team"/>
     <meta property="og:description" content="Time de desenvolvimento da Infocorp"/>
     <meta property="og:url" content="https://dev.infocorpjr.com/"/>
-    <meta property="og:image" content="https://dev.infocorpjr.com/assets/favicon/apple-icon-180x180.png"/>
+    <meta property="og:type" content="Website"/>
+    <meta property="og:image" content="https://dev.infocorpjr.com/assets/favicon/ms-icon-310x310.png"/>
     <!-- The title -->
     <title>Infocorp Developer Team</title>
     <!-- Meta tag's -->
