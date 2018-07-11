@@ -22,6 +22,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- Facebook Open Graph -->
+    <meta property=”og:image” content=”https://dev.infocorpjr.com/assets/favicon/apple-icon-180x180.png“/>
     <!-- The title -->
     <title>Infocorp | Developer Team</title>
     <!-- Meta tag's -->
