@@ -34,3 +34,17 @@ const developing = new Swiper('#developing', {
         clickable: true
     },
 });
+
+// Movimento das barras de destaque.
+var el = document.getElementById('featured');
+if (el.addEventListener) {
+    el.addEventListener('mousemove', function (event) {
+        document.querySelector('.xtop').style.left = event.pageX - 4 + 'px';
+        document.querySelector('.yleft').style.top = event.pageY - 4 + 'px';
+    }, false);
+} else if (el.attachEvent) {
+    el.attachEvent('onmousemove', function (event) {
+        document.querySelector('.xtop').style.left = event.pageX - 4 + 'px';
+        document.querySelector('.yleft').style.top = event.pageY - 4 + 'px';
+    });
+}
