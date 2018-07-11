@@ -23,12 +23,14 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Facebook Open Graph -->
-    <meta property="og:title" content="Infocorp | Developer Team" />
+    <meta property="og:title" content="Infocorp Developer Team" />
     <meta property="og:description" content="Time de desenvolvimento da Infocorp" />
     <meta property="og:url" content="https://dev.infocorpjr.com/" />
-    <meta property=”og:image” content=”https://dev.infocorpjr.com/assets/favicon/apple-icon-180x180.png“/>
+    <meta property=”og:image” content=”http://dev.infocorpjr.com/assets/favicon/apple-icon-180x180.png“/>
+    <meta property="og:image:secure_url" content="https://dev.infocorpjr.com/assets/favicon/apple-icon-180x180.png" />
+    <meta property="og:image:type" content="image/png" />
     <!-- The title -->
-    <title>Infocorp | Developer Team</title>
+    <title>Infocorp Developer Team</title>
     <!-- Meta tag's -->
     <meta http-equiv="content-language" content="pt-br">
     <meta http-equiv="content-type" content="text/html; utf-8">
