@@ -16,6 +16,9 @@ const testing = new Swiper('#testing', {
     direction: 'horizontal',
     touchEventsTarget: 'wrapper',
     loop: false,
+    autoplay: {
+        delay: 3000,
+    },
     // If we need pagination
     pagination: {
         el: '#testing__pagination',
@@ -28,6 +31,9 @@ const developing = new Swiper('#developing', {
     direction: 'horizontal',
     touchEventsTarget: 'wrapper',
     loop: false,
+    autoplay: {
+        delay: 3000,
+    },
     // If we need pagination
     pagination: {
         el: '#developing__pagination',
@@ -35,8 +41,27 @@ const developing = new Swiper('#developing', {
     },
 });
 
+const members = new Swiper('.members__swiper--container', {
+    // If we need pagination
+    pagination: {
+        el: '.members__swiper--pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            var texts = ['Backend', 'Frontend'];
+            return '' +
+                '<li class="' + className + '">' +
+                '<a href="javascript:void(0)">' + (texts.hasOwnProperty(index) ? texts[index] : (index + 1)) + '</a>' +
+                '</li>';
+        }
+    },
+    scrollbar: {
+        el: '.members__swiper--scrollbar',
+        draggable: true,
+    },
+});
+
 // Movimento das barras de destaque.
-var el = document.getElementById('featured');
+const el = document.getElementById('featured');
 if (el.addEventListener) {
     el.addEventListener('mousemove', function (event) {
         document.querySelector('.xtop').style.left = event.pageX - 4 + 'px';

@@ -335,8 +335,16 @@ body {
   }
 }
 
+/* The section component */
 /* BEM PATTERN - block, element, modifier  */
+.section {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
+/* BEM PATTERN - block, element, modifier  */
 /* Featured */
 
 .pfeatured {
@@ -408,6 +416,88 @@ body {
   .pfeatured .pfeatured__pdown--link {
     width: 40px;
   }
+}
+
+/* Members */
+.members__one,
+.members__two {
+  position: relative;
+}
+
+.members__one {
+  width: 40%;
+}
+
+@media (max-width: 400px) {
+  .members__one {
+    display: none;
+  }
+}
+
+.members__one .members__swiper--pagination {
+  margin: 1px;
+  padding: 1px;
+  position: relative;
+}
+
+.members__one .members__swiper--pagination > li {
+  margin-bottom: 5px;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left;
+  display: block;
+  outline: none !important;
+}
+
+.members__one .members__swiper--pagination > li > a {
+  font-size: 1em;
+}
+
+.members__two {
+  padding-right: 0;
+}
+
+.members__two .members__swiper--container,
+.members__two .members__swiper--wrapper,
+.members__two .members__swiper--slide {
+  height: 100%;
+}
+
+.members__two .members__swiper--pagination {
+  bottom: 1%;
+  left: 0;
+  margin: 1px;
+  padding: 1px;
+  width: 100%;
+}
+
+.members__two .members__swiper--pagination > li {
+  width: 20px;
+  height: 20px;
+  margin: 1px 5px;
+  outline: none;
+}
+
+.members__two .members__swiper--pagination > li > a {
+  display: none;
+}
+
+.members__two .members__swiper--scrollbar {
+  margin-top: 1%;
+  position: relative !important;
+}
+
+.members__two--link {
+  font-size: 1em;
+  color: $primary-color;
+}
+
+.person {
+  height: 100%;
+  background-color: beige;
+  text-align: center;
 }
 
 /* About */
