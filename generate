@@ -309,6 +309,12 @@
                                     <div class="pbox__middle">
                                         <div class="pbox__middle--content">
                                             <strong>
+                                                let links = {
+                                                <a class="members__two--link" href="#featured">
+                                                    home
+                                                </a>}
+                                                <br/>
+                                                <br/>
                                                 let backend = {
                                                 'Jorge Rodrigues',<br/>
                                                 'Marcus Goldschmitd',<br/>
@@ -329,7 +335,7 @@
                                                 '+'
                                                 ,
                                                 <a class="members__two--link" href="#about">
-                                                    Sobre
+                                                    sobre
                                                 </a>}
                                             </strong>
                                         </div>
@@ -343,6 +349,12 @@
                                     <div class="pbox__middle">
                                         <div class="pbox__middle--content">
                                             <strong>
+                                                let links = {
+                                                <a class="members__two--link" href="#featured">
+                                                    home
+                                                </a>}
+                                                <br/>
+                                                <br/>
                                                 let frontend = {
                                                 'Jorge Rodrigues',
                                                 'Marcus Goldschmitd',<br/>
@@ -372,7 +384,7 @@
                                                 '+'
                                                 ,
                                                 <a class="members__two--link" href="#about">
-                                                    Sobre
+                                                    sobre
                                                 </a>}
                                             </strong>
                                         </div>
