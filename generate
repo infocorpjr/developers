@@ -309,34 +309,13 @@
                                     <div class="pbox__middle">
                                         <div class="pbox__middle--content">
                                             <strong>
-                                                let links = {
-                                                <a class="members__two--link" href="#featured">
-                                                    home
-                                                </a>}
+                                                let links = {<a class="members__two--link" href="#featured">home</a>}
                                                 <br/>
                                                 <br/>
-                                                let backend = {
-                                                'Jorge Rodrigues',<br/>
-                                                'Marcus Goldschmitd',<br/>
-                                                'Igor Breno',<br/>
-                                                'Igor Jordany',<br/>
-                                                'Moacyr Pinheiro'}
+                                                let backend = {'Jorge Rodrigues',<br/>'Marcus Goldschmitd',<br/>'Igor Breno',<br/>'Igor Jordany',<br/>'Moacyr Pinheiro'}
                                                 <br/>
                                                 <br/>
-                                                let links = { 'Projetos em',
-                                                <a class="members__two--link" href="#dev">
-                                                    desenvolvimento
-                                                </a>
-                                                ,
-                                                <a class="members__two--link" href="#projects">
-                                                    teste
-                                                </a>
-                                                <br/>
-                                                '+'
-                                                ,
-                                                <a class="members__two--link" href="#about">
-                                                    sobre
-                                                </a>}
+                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a class="members__two--link" href="#projects">teste</a><br/>'+',<a class="members__two--link" href="#about">sobre</a>}
                                             </strong>
                                         </div>
                                     </div>
@@ -349,43 +328,13 @@
                                     <div class="pbox__middle">
                                         <div class="pbox__middle--content">
                                             <strong>
-                                                let links = {
-                                                <a class="members__two--link" href="#featured">
-                                                    home
-                                                </a>}
+                                                let links = {<a class="members__two--link" href="#featured">home</a>}
                                                 <br/>
                                                 <br/>
-                                                let frontend = {
-                                                'Jorge Rodrigues',
-                                                'Marcus Goldschmitd',<br/>
-                                                'Igor Breno',
-                                                'Moacyr Pinheiro',<br/>
-                                                'Luiz Rondon',
-                                                'David Henrique',<br/>
-                                                'Rubens Galvão',
-                                                'Kesley Willian',<br/>
-                                                'Robson Rodrigo',
-                                                'Thiago Ripardo',<br/>
-                                                'Igor Jordany',
-                                                'Arthur Guimarâes',<br/>
-                                                'Marco Parente'
-                                                }
+                                                let frontend = {'Jorge Rodrigues','Marcus Goldschmitd',<br/>'Igor Breno','Moacyr Pinheiro',<br/>'Luiz Rondon','David Henrique',<br/>'Rubens Galvão','Kesley Willian',<br/>'Robson Rodrigo','Thiago Ripardo',<br/>'Igor Jordany','Arthur Guimarâes',<br/>'Marco Parente'}
                                                 <br/>
                                                 <br/>
-                                                let links = { 'Projetos em',
-                                                <a class="members__two--link" href="#dev">
-                                                    desenvolvimento
-                                                </a>
-                                                ,
-                                                <a class="members__two--link" href="#projects">
-                                                    teste
-                                                </a>
-                                                <br/>
-                                                '+'
-                                                ,
-                                                <a class="members__two--link" href="#about">
-                                                    sobre
-                                                </a>}
+                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a class="members__two--link" href="#projects">teste</a><br/>'+',<a class="members__two--link" href="#about">sobre</a>}
                                             </strong>
                                         </div>
                                     </div>
