@@ -279,6 +279,7 @@
                                     <path class="st0" d="M265.5,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-67.3-67.3l67.3-67.3
                                     c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
                                 </g>
+                            </g>
                         </svg>
                         </a>
                     </li>
@@ -312,10 +313,13 @@
                                                 let links = {<a class="members__two--link" href="#featured">home</a>}
                                                 <br/>
                                                 <br/>
-                                                let backend = {'Jorge Rodrigues',<br/>'Marcus Goldschmitd',<br/>'Igor Breno',<br/>'Igor Jordany',<br/>'Moacyr Pinheiro'}
+                                                let backend = {'Jorge Rodrigues',<br/>'Marcus Goldschmitd',<br/>'Igor
+                                                Breno',<br/>'Igor Jordany',<br/>'Moacyr Pinheiro'}
                                                 <br/>
                                                 <br/>
-                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a class="members__two--link" href="#projects">teste</a><br/>'+',<a class="members__two--link" href="#about">sobre</a>}
+                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a
+                                                        class="members__two--link" href="#projects">teste</a><br/>'+',<a
+                                                        class="members__two--link" href="#about">sobre</a>}
                                             </strong>
                                         </div>
                                     </div>
@@ -331,10 +335,15 @@
                                                 let links = {<a class="members__two--link" href="#featured">home</a>}
                                                 <br/>
                                                 <br/>
-                                                let frontend = {'Jorge Rodrigues','Marcus Goldschmitd',<br/>'Igor Breno','Moacyr Pinheiro',<br/>'Luiz Rondon','David Henrique',<br/>'Rubens Galvão','Kesley Willian',<br/>'Robson Rodrigo','Thiago Ripardo',<br/>'Igor Jordany','Arthur Guimarâes',<br/>'Marco Parente'}
+                                                let frontend = {'Jorge Rodrigues','Marcus Goldschmitd',<br/>'Igor
+                                                Breno','Moacyr Pinheiro',<br/>'Luiz Rondon','David Henrique',<br/>'Rubens
+                                                Galvão','Kesley Willian',<br/>'Robson Rodrigo','Thiago Ripardo',<br/>'Igor
+                                                Jordany','Arthur Guimarâes',<br/>'Marco Parente'}
                                                 <br/>
                                                 <br/>
-                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a class="members__two--link" href="#projects">teste</a><br/>'+',<a class="members__two--link" href="#about">sobre</a>}
+                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a
+                                                        class="members__two--link" href="#projects">teste</a><br/>'+',<a
+                                                        class="members__two--link" href="#about">sobre</a>}
                                             </strong>
                                         </div>
                                     </div>
