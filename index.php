@@ -87,7 +87,7 @@
                     </g>
                 </svg>
                     <h1 class="pfeatured__box--line">
-                        TESTE TESTE TESTE Developer team <span class="w">|</span>
+                        Developer team <span class="w">|</span>
                     </h1>
                 </div>
             </div>
