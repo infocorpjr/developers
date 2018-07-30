@@ -427,10 +427,10 @@
 .members__top--one:after,
 .members__middle--one:after,
 .members__bottom--one:after {
-  top: 5%;
+  top: 0;
   left: 1%;
   width: 99%;
-  height: 90%;
+  height: 100%;
   background-color: $primary-color;
   content: '';
   position: absolute;
