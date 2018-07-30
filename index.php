@@ -430,7 +430,7 @@
                                     e
                                     compartilhar conhecimento, além de experiência. O objetivo é simples: aplicar o
                                     conhecimento
-                                    adquirido e mudar a vida das pessoas!
+                                    adquirido e mudar a vida das pessoas.
                                 </p>
                                 <p class="pabout__pbox--links">
                                     <a class="pabout__pbox--link" href="#featured">Home</a>
