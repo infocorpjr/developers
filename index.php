@@ -58,6 +58,7 @@
     </script>
 </head>
 <body>
+
 <!-- Featured | BEM CSS PATTERN -->
 <div class="section">
     <div id="featured" class="pbox pfeatured">
@@ -291,13 +292,45 @@
 <!-- OURS MEMBERS -->
 <div class="section">
     <div id="members" class="pbox members">
+        <div class="pbox__top">
+            <div class="pbox__top--content members__top--one"></div>
+            <div class="pbox__top--content members__top--two">
+                <ul class="pnavbar-top">
+                    <li class="pnavbar-top__up">
+                        <a class="pnavbar-top__up--link" href="#dev">
+                            <svg class="pnavbar-top__up--icon" version="1.1" id="Layer_1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
+                                 xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
+                                    S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"/>
+                                    <path class="st0" d="M265.5,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-67.3-67.3l67.3-67.3
+                                    c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
+                                </g>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="pnavbar-top__groups">
+                        <p class="pnavbar-top__groups--title">
+                            AQUI ESTÁ
+                            <span class="pnavbar-top__groups--subtitle">
+                            <br/> NOSSOS DESENVOLVEDORES.
+                        </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="pbox__middle">
-            <div class="pbox__middle--content members__one">
+            <div class="pbox__middle--content members__middle--one">
                 <h3>Infocorp<br/>Developer Team</h3>
                 <!-- If we need pagination -->
                 <ul class="swiper-pagination members__swiper--pagination"></ul>
             </div>
-            <div class="pbox__middle--content members__two">
+            <div class="pbox__middle--content members__middle--two">
                 <!-- Slider main container -->
                 <div id="members_swiper_container" class="swiper-container members__swiper--container">
                     <!-- Additional required wrapper -->
@@ -309,16 +342,8 @@
                                     <div class="pbox__middle">
                                         <div class="pbox__middle--content">
                                             <strong>
-                                                let links = {<a class="members__two--link" href="#featured">home</a>}
-                                                <br/>
-                                                <br/>
-                                                let backend = {'Jorge Rodrigues',<br/>'Marcus Goldschmitd',<br/>'Igor
+                                                let <b>backend</b> = {'Jorge Rodrigues',<br/>'Marcus Goldschmitd',<br/>'Igor
                                                 Breno',<br/>'Igor Jordany',<br/>'Moacyr Pinheiro'}
-                                                <br/>
-                                                <br/>
-                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a
-                                                        class="members__two--link" href="#projects">teste</a><br/>'+',<a
-                                                        class="members__two--link" href="#about">sobre</a>}
                                             </strong>
                                         </div>
                                     </div>
@@ -331,18 +356,10 @@
                                     <div class="pbox__middle">
                                         <div class="pbox__middle--content">
                                             <strong>
-                                                let links = {<a class="members__two--link" href="#featured">home</a>}
-                                                <br/>
-                                                <br/>
-                                                let frontend = {'Jorge Rodrigues','Marcus Goldschmitd',<br/>'Igor
+                                                let <b>frontend</b> = {'Jorge Rodrigues','Marcus Goldschmitd',<br/>'Igor
                                                 Breno','Moacyr Pinheiro',<br/>'Luiz Rondon','David Henrique',<br/>'Rubens
                                                 Galvão','Kesley Willian',<br/>'Robson Rodrigo','Thiago Ripardo',<br/>'Igor
                                                 Jordany','Arthur Guimarâes',<br/>'Marco Parente'}
-                                                <br/>
-                                                <br/>
-                                                let links = {'Projetos em',<a class="members__two--link" href="#dev">desenvolvimento</a>,<a
-                                                        class="members__two--link" href="#projects">teste</a><br/>'+',<a
-                                                        class="members__two--link" href="#about">sobre</a>}
                                             </strong>
                                         </div>
                                     </div>
@@ -355,6 +372,40 @@
                 </div>
                 <!-- If we need pagination -->
                 <ul class="swiper-pagination members__swiper--pagination"></ul>
+            </div>
+        </div>
+        <div class="pbox__bottom">
+            <div class="pbox__bottom--content members__bottom--one"></div>
+            <div class="pbox__bottom--content members__bottom--two">
+                <ul class="pnavbar-bottom">
+                    <li class="pnavbar-bottom__groups">
+                        <p class="pnavbar-bottom__groups--title">
+                            SAIBA +
+                            <span class="pnavbar-bottom__groups--subtitle">
+                            SOBRE NÓS
+                        </span>
+                            <span class="w">_</span>
+                        </p>
+                    </li>
+                    <li class="pnavbar-bottom__down">
+                        <a class="pnavbar-bottom__down--link" href="#about">
+                            <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
+                                 xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
+                                    S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"/>
+                                    <path class="st0" d="M265.5,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-67.3-67.3l67.3-67.3
+                                    c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
+                                </g>
+                            </g>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

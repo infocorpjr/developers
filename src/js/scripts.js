@@ -1,3 +1,18 @@
+
+// Movimento das barras de destaque.
+const el = document.getElementById('featured');
+if (el.addEventListener) {
+    el.addEventListener('mousemove', function (event) {
+        document.querySelector('.xtop').style.left = event.pageX - 8 + 'px';
+        document.querySelector('.yleft').style.top = event.pageY - 8 + 'px';
+    }, false);
+} else if (el.attachEvent) {
+    el.attachEvent('onmousemove', function (event) {
+        document.querySelector('.xtop').style.left = event.pageX - 8 + 'px';
+        document.querySelector('.yleft').style.top = event.pageY - 8 + 'px';
+    });
+}
+
 /**
  * Swiper 4.3.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -59,17 +74,3 @@ const members = new Swiper('.members__swiper--container', {
         draggable: true,
     },
 });
-
-// Movimento das barras de destaque.
-const el = document.getElementById('featured');
-if (el.addEventListener) {
-    el.addEventListener('mousemove', function (event) {
-        document.querySelector('.xtop').style.left = event.pageX - 4 + 'px';
-        document.querySelector('.yleft').style.top = event.pageY - 4 + 'px';
-    }, false);
-} else if (el.attachEvent) {
-    el.attachEvent('onmousemove', function (event) {
-        document.querySelector('.xtop').style.left = event.pageX - 4 + 'px';
-        document.querySelector('.yleft').style.top = event.pageY - 4 + 'px';
-    });
-}
