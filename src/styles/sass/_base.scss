@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  font-size: 2em;
+  font-size: 1em;
   text-decoration: none;
   color: $dark-color;
 }
@@ -27,22 +27,21 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    font-size: 14px
+    font-size: 13px
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   body {
-    font-size: 18px
+    font-size: 15px
   }
 }
 
 @media (min-width: 1200px) {
   body {
-    font-size: 24px
+    font-size: 18px
   }
 }
-
 
 strong {
   font-weight: normal;

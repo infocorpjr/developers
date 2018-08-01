@@ -578,7 +578,7 @@
 }
 
 .members__top--one {
-  width: 40%;
+  width: 30%;
 }
 
 @media (max-width: 400px) {
@@ -649,64 +649,83 @@
 }
 
 /* About */
-.pabout {
-  background-repeat: no-repeat;
-  background-position: 80% center;
-  background-size: 40%;
+.about {
+  margin: 200px auto;
+  width: 80%;
+  display: table;
 }
 
-.pabout__illustration {
-  margin-right: 2%;
-  width: 20%;
-  float: left;
+.about__left,
+.about__right {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.pabout__pbox--box {
-  background-color: rgba(255, 255, 255, 0.90);
-  box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.90);
+.about__left {
+  width: 40%;
 }
 
-.pabout__pbox--title {
-  margin: 0;
-  font-size: 2em;
-  color: $primary-color;
+.about__identity {
+  position: relative;
 }
 
-.pabout__pbox--text {
-  font-size: 0.8em;
+.about__identity:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  content: '';
+  transform: rotate(20deg);
+  position: absolute;
+  z-index: -2;
+  opacity: 0.4;
 }
 
-.pabout__pbox--link {
-  margin-right: 20px;
-  font-size: 1em;
+.about__identity:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed $primary-color;
+  content: '';
+  transform: rotate(-20deg);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.about__illustration {
+  margin: 1px auto;
+  padding: 10% 5%;
+  width: 70%;
+  background-color: white;
+  display: block;
+}
+
+.about__title,
+.about__description {
+  margin-left: auto;
+  width: 80%;
+}
+
+.about__title {
   font-weight: bold;
-}
-
-.pabout__infocorp {
-  font-size: 1.1em;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.90);
-  box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.90);
+  font-size: 2em;
 }
 
 /* W */
-@media (max-width: 400px) {
-  .pabout__illustration {
-    width: 60%;
+@media (max-width: 500px) {
+  .about__left,
+  .about__right {
+    display: table-row;
   }
-  .pabout .pabout__pbox--title {
-    font-size: 1em;
+  .about__title,
+  .about__description {
+    width: 100%;
   }
-  .pabout .pabout__pbox--text {
-    font-size: 1em;
-  }
-}
 
-@media (min-width: 401px) and (max-width: 600px) {
-  .pabout__illustration {
-    width: 40%;
-  }
-  .pabout .pabout__pbox--text {
-    font-size: 1em;
+  .about__title {
+    margin-top: 80px;
   }
 }
