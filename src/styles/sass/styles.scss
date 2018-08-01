@@ -390,6 +390,10 @@
 .pfeatured {
   height: 80%;
   background-color: $dark-color;
+  background-image: url("../../img/desenhando.png");
+  background-size: 30%;
+  background-position: 80% center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -429,20 +433,39 @@
 
 /* W */
 @media (max-width: 300px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
+  }
   .pfeatured .pfeatured__pdown--link {
     width: 60px;
   }
 }
 
 @media (min-width: 301px) and (max-width: 400px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
+  }
   .pfeatured .pfeatured__pdown--link {
     width: 60px;
   }
 }
 
 @media (min-width: 401px) and (max-width: 500px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
+  }
   .pfeatured .pfeatured__pdown--link {
     width: 60px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
   }
 }
 
