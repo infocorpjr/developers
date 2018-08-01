@@ -208,7 +208,7 @@
                 <?php $a = array_diff(scandir('developing'), array('.', '..', 'backup', 'index.php')); ?>
                 <?php foreach ($a as $b): ?>
                     <li class="developing__item">
-                        <a href="<?php echo "developing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
+                        <a class="developing__link" href="<?php echo "developing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -220,12 +220,12 @@
             <p class="testing__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat fugit labore non quasi sit.
             </p>
-            <ul class="developing__list">
+            <ul class="testing__list">
                 <!-- Slides -->
                 <?php $a = array_diff(scandir('testing'), array('.', '..', 'backup', 'index.php')); ?>
                 <?php foreach ($a as $b): ?>
-                    <li class="developing__item">
-                        <a href="<?php echo "testing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
+                    <li class="testing__item">
+                        <a  class="testing__link" href="<?php echo "testing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
