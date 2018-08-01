@@ -194,178 +194,41 @@
 </div>
 
 <!-- Projects | BEM CSS PATTERN -->
-<div class="section">
-    <div id="projects" class="pbox pprojects">
-        <div class="pbox__top">
-            <div class="pbox__top--content">
-                <ul class="pnavbar-top">
-                    <li class="pnavbar-top__up">
-                        <a class="pnavbar-top__up--link" href="#featured">
-                            <svg class="pnavbar-top__up--icon" version="1.1" id="Layer_1"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
-                                 xml:space="preserve">
-                            <g>
-                                <g>
-                                    <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
-                                    S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"/>
-                                    <path class="st0" d="M265.5,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-67.3-67.3l67.3-67.3
-                                    c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
-                                </g>
-                        </svg>
-                        </a>
+<div class="projects">
+    <div class="projects__left">
+        <div class="developing">
+            <p class="developing__title">Projetos em desenvolvimento</p>
+            <p class="developing__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aspernatur blanditiis
+                consectetur consequatur culpa ducimus eum exercitationem fugit, hic inventore iusto nemo nobis numquam
+                provident quam tempore velit. Minus?
+            </p>
+            <ul class="developing__list">
+                <!-- Slides -->
+                <?php $a = array_diff(scandir('developing'), array('.', '..', 'backup', 'index.php')); ?>
+                <?php foreach ($a as $b): ?>
+                    <li class="developing__item">
+                        <a href="<?php echo "developing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
                     </li>
-                    <li class="pnavbar-top__groups">
-                        <p class="pnavbar-top__groups--title">
-                            PROJETOS,
-                            <span class="pnavbar-top__groups--subtitle">
-                            AQUI ESTÃO NOSSOS PROJETOS<br/> EM FASE DE TESTE.
-                        </span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="pbox__middle">
-            <div class="pbox__middle--content">
-                <!-- Slider main container -->
-                <div id="testing" class="swiper-container swiper__container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper swiper__container--wrapper">
-                        <!-- Slides -->
-                        <?php $a = array_diff(scandir('testing'), array('.', '..', 'backup', 'index.php')); ?>
-                        <?php foreach ($a as $b): ?>
-                            <div class="swiper-slide swiper__container--slide">
-                                <a href="<?php echo "testing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div id="testing__pagination" class="swiper-pagination swiper__pagination"></div>
-            </div>
-        </div>
-        <div class="pbox__bottom">
-            <div class="pbox__bottom--content">
-                <ul class="pnavbar-bottom">
-                    <li class="pnavbar-bottom__groups">
-                        <p class="pnavbar-bottom__groups--title">
-                            EM FRENTE ...
-                            <span class="pnavbar-bottom__groups--subtitle">
-                            Quer ver um pouco + ?
-                        </span>
-                            <span class="w">_</span>
-                        </p>
-                    </li>
-                    <li class="pnavbar-bottom__down">
-                        <a class="pnavbar-bottom__down--link" href="#dev">
-                            <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
-                                 xml:space="preserve">
-                            <g>
-                                <g>
-                                    <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
-                                    S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"/>
-                                    <path class="st0" d="M265.5,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-67.3-67.3l67.3-67.3
-                                    c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
-                                </g>
-                        </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <?php endforeach; ?>
+            </ul>
         </div>
     </div>
-</div>
-
-<!-- Dev | BEM CSS PATTERN -->
-<div class="section">
-    <div id="dev" class="pbox">
-        <div class="pbox__top">
-            <div class="pbox__top--content">
-                <ul class="pnavbar-top">
-                    <li class="pnavbar-top__up">
-                        <a class="pnavbar-top__up--link" href="#projects">
-                            <svg class="pnavbar-top__up--icon" version="1.1" id="Layer_1"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
-                                 xml:space="preserve">
-                            <g>
-                                <g>
-                                    <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
-                                    S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"/>
-                                    <path class="st0" d="M265.5,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-67.3-67.3l67.3-67.3
-                                    c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
-                                </g>
-                        </svg>
-                        </a>
+    <div class="projects__right">
+        <div class="testing">
+            <p class="testing__title">Projetos em teste</p>
+            <p class="testing__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat fugit labore non quasi sit.
+            </p>
+            <ul class="developing__list">
+                <!-- Slides -->
+                <?php $a = array_diff(scandir('testing'), array('.', '..', 'backup', 'index.php')); ?>
+                <?php foreach ($a as $b): ?>
+                    <li class="developing__item">
+                        <a href="<?php echo "testing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
                     </li>
-                    <li class="pnavbar-top__groups">
-                        <p class="pnavbar-top__groups--title">
-                            DESENVOLVIMENTO,
-                            <span class="pnavbar-top__groups--subtitle">
-                            AQUI ESTÃO NOSSOS PROJETOS<br/> EM DESENVOLVIMENTO.
-                        </span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="pbox__middle">
-            <div class="pbox__middle--content">
-                <!-- Slider main container -->
-                <div id="developing" class="swiper-container swiper__container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper swiper__container--wrapper">
-                        <!-- Slides -->
-                        <?php $c = array_diff(scandir('developing'), array('.', '..', 'backup', 'index.php')); ?>
-                        <?php foreach ($c as $d): ?>
-                            <div class="swiper-slide swiper__container--slide">
-                                <a href="<?php echo "developing/$d" ?>"><?php echo strlen($d) > 13 ? substr($d, 0, 10) . '...' : $d ?></a>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div id="developing__pagination" class="swiper-pagination swiper__pagination"></div>
-            </div>
-        </div>
-        <div class="pbox__bottom">
-            <div class="pbox__bottom--content">
-                <ul class="pnavbar-bottom">
-                    <li class="pnavbar-bottom__groups">
-                        <p class="pnavbar-bottom__groups--title">
-                            INFOCORP DEVELOPER TEAM.
-                            <span class="pnavbar-bottom__groups--subtitle">
-                            A equipe
-                        </span>
-                            <span class="w">_</span>
-                        </p>
-                    </li>
-                    <li class="pnavbar-bottom__down">
-                        <a class="pnavbar-bottom__down--link" href="#members">
-                            <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
-                                 xml:space="preserve">
-                            <g>
-                                <g>
-                                    <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
-                                    S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"/>
-                                    <path class="st0" d="M265.5,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-67.3-67.3l67.3-67.3
-                                    c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
-                                </g>
-                            </g>
-                        </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <?php endforeach; ?>
+            </ul>
         </div>
     </div>
 </div>
