@@ -372,6 +372,40 @@
     </div>
 </div>
 
+<!-- Footer | BEM CSS PATTERN -->
+<div class="footer">
+    <div class="footer__left">
+        <p>
+            <b>Infocorp Consultoria</b>
+            <br/>
+            Empresa Júnior do Instituto de Computação, UFMT
+            <br/>
+            Diretoria de desenvolvimento
+            <br/>
+            <br/>
+            Acesse infocorpjr.com
+        </p>
+    </div>
+    <div class="footer__right">
+        <p>
+            <b>Rede Social</b>
+            <br/>
+            Facebook, Instagram
+            <br/>
+            <b>Contato</b>
+            <br/>
+            suporte@infocorp.ic.ufmt.br
+        </p>
+    </div>
+</div>
+
+
+<p class="copyright">
+    © Copyright 2018 Infocorp - All Rights Reserved
+    <small>
+        Design by Jorge Rodrigues / Ilustrações e ícones flaticon.com
+    </small>
+</p>
 
 <!-- Default scripts -->
 <script src="assets/js/scripts.js"></script>

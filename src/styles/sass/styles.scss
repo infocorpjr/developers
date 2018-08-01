@@ -722,6 +722,7 @@
   margin: 1px auto;
   padding: 10% 5%;
   width: 70%;
+  max-width: 500px;
   background-color: white;
   display: block;
 }
@@ -739,6 +740,9 @@
 
 /* W */
 @media (max-width: 500px) {
+  .about {
+    margin: 80px auto;
+  }
   .about__left,
   .about__right {
     display: table-row;
@@ -751,4 +755,48 @@
   .about__title {
     margin-top: 80px;
   }
+}
+
+/* Footer */
+.footer {
+  margin: 80px auto 0 auto;
+  width: 80%;
+  border-top: 1px solid $dark-color;
+}
+
+.footer:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.footer__left,
+.footer__right {
+  float: left;
+}
+
+.footer__left {
+  width: 40%;
+}
+
+.footer__right {
+  width: 60%;
+  text-align: right;
+}
+
+/* W */
+@media (max-width: 600px) {
+  .footer__left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__right {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.copyright {
+  text-align: center;
 }
