@@ -116,6 +116,90 @@
   }
 }
 
+/* The menu component */
+/* BEM PATTERN - block, element, modifier  */
+
+.menu {
+  margin-top: 1%;
+  width: 100%;
+  display: table;
+}
+
+.menu__left,
+.menu__right {
+  vertical-align: middle;
+}
+
+.menu__left {
+  display: table-cell;
+}
+
+.menu__brand {
+  width: 60px;
+}
+
+.menu__cog-back {
+  fill: black;
+}
+
+.menu__cog-lines {
+  fill: $primary-color;
+}
+
+// Brand animation
+@keyframes one-animation {
+  from {
+    transform: rotateZ(360deg)
+  }
+  to {
+    transform: rotateZ(0deg)
+  }
+}
+
+// End brand animation
+
+.one-animation {
+  transform-origin: center;
+  animation: one-animation 3.5s infinite
+}
+
+.menu__right {
+  width: 100%;
+  display: table-cell;
+}
+
+.menu__navigation {
+  text-align: right;
+}
+
+.menu__links {
+  display: inline-block;
+}
+
+.menu__links--divider {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: white;
+  display: inline-block;
+}
+
+.menu__link {
+  font-size: 1em;
+  color: $primary-color;
+}
+
+// Menu para flexbox
+.flexbox .menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.flexbox .menu__left,
+.flexbox .menu__right {
+  display: inline-block;
+}
+
 /* The box component */
 /* BEM PATTERN - block, element, modifier  */
 
@@ -331,6 +415,7 @@
 /* Featured */
 
 .pfeatured {
+  height: 80%;
   background-color: $dark-color;
   position: relative;
 }
@@ -340,7 +425,6 @@
 }
 
 .pfeatured .pfeatured__box--brand {
-  margin-top: 5%;
   width: 30%;
 }
 

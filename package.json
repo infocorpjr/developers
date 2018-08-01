@@ -15,7 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "laravel-mix": "^2.1.11"
+    "laravel-mix": "^2.1.11",
+    "scroll-js": "^1.9.1"
   },
   "dependencies": {
     "swiper": "^4.3.3"
