@@ -677,46 +677,6 @@ strong {
  * Released on: June 5, 2018
  */
 
-/* The slide Swiper component */
-
-/* BEM PATTERN - block, element, modifier  */
-
-.swiper__container {
-  margin: 1px auto;
-  width: 90%;
-  cursor: pointer;
-}
-
-.swiper__container--slide {
-  font-size: 2em;
-}
-
-@media (max-width: 500px) {
-  .swiper__container--slide {
-    font-size: 1em;
-  }
-}
-
-.swiper__pagination {
-  margin-top: 20px;
-  width: 100%;
-  position: relative;
-}
-
-.swiper__pagination > span {
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #43A047;
-  outline: none;
-  cursor: pointer;
-}
-
-.st0 {
-  fill: #43A047;
-}
-
 /***
  * Jorge Lauro Campos Rodrigues <jorgerodrigues9@outlook.com
  *              _____                   _______                   _____                    _____                    _____
@@ -741,25 +701,6 @@ strong {
  *                                      ~~                      \:|   |                  \::/____/                \::/    /
  *                                                               \|___|                                            \/____/
  */
-
-.xtop,
-.yleft {
-  background-color: white;
-  position: absolute;
-  z-index: 3;
-}
-
-.xtop {
-  top: 0;
-  width: 8px;
-  height: 10px;
-}
-
-.yleft {
-  left: 0;
-  width: 10px;
-  height: 8px;
-}
 
 .w {
   -webkit-animation: w .9s infinite;
@@ -802,35 +743,18 @@ strong {
   }
 }
 
-/* The menu component */
-
-/* BEM PATTERN - block, element, modifier  */
-
-.menu {
-  margin-top: 1%;
-  width: 100%;
-  display: table;
+@-webkit-keyframes down {
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 
-.menu__left,
-.menu__right {
-  vertical-align: middle;
-}
-
-.menu__left {
-  display: table-cell;
-}
-
-.menu__brand {
-  width: 60px;
-}
-
-.menu__cog-back {
-  fill: black;
-}
-
-.menu__cog-lines {
-  fill: #43A047;
+@keyframes down {
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 
 @-webkit-keyframes one-animation {
@@ -862,6 +786,60 @@ strong {
           transform-origin: center;
   -webkit-animation: one-animation 3.5s infinite;
           animation: one-animation 3.5s infinite;
+}
+
+.st0 {
+  fill: #43A047;
+}
+
+.xtop,
+.yleft {
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+}
+
+.xtop {
+  top: 0;
+  width: 8px;
+  height: 10px;
+}
+
+.yleft {
+  left: 0;
+  width: 10px;
+  height: 8px;
+}
+
+/* The menu component */
+
+/* BEM PATTERN - block, element, modifier  */
+
+.menu {
+  margin-top: 1%;
+  width: 100%;
+  display: table;
+}
+
+.menu__left,
+.menu__right {
+  vertical-align: middle;
+}
+
+.menu__left {
+  display: table-cell;
+}
+
+.menu__brand {
+  width: 60px;
+}
+
+.menu__cog-back {
+  fill: black;
+}
+
+.menu__cog-lines {
+  fill: #43A047;
 }
 
 .menu__right {
@@ -1011,9 +989,10 @@ strong {
 }
 
 .pnavbar-top .pnavbar-top__up--icon {
+  margin-right: 30px;
   width: 60px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .pnavbar-top .pnavbar-top__groups {
@@ -1169,20 +1148,6 @@ strong {
   display: inline-block;
 }
 
-@-webkit-keyframes down {
-  50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-
-@keyframes down {
-  50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-
 .pfeatured .pfeatured__pdown--icon {
   width: 100%;
   -webkit-animation: down 1.2s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
@@ -1323,7 +1288,24 @@ strong {
 /* Members */
 
 .members {
+  height: auto;
   position: relative;
+}
+
+.members:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #43A047;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.members__title {
+  margin-top: 0;
 }
 
 .members__top--one,
@@ -1337,24 +1319,6 @@ strong {
 
 .members__top--one {
   width: 40%;
-}
-
-.members__middle--one {
-  width: 40%;
-}
-
-.members__top--one:after,
-.members__middle--one:after,
-.members__bottom--one:after {
-  top: 0;
-  left: 1%;
-  width: 99%;
-  height: 100%;
-  background-color: #43A047;
-  content: '';
-  position: absolute;
-  z-index: -1;
-  opacity: 0.1;
 }
 
 @media (max-width: 400px) {
@@ -1396,12 +1360,15 @@ strong {
   height: 100%;
 }
 
+.members__middle--two .members__swiper--container {
+  margin-top: 50px;
+}
+
 .members__middle--two .members__swiper--pagination {
-  bottom: 1%;
-  left: 0;
-  margin: 1px;
+  margin: 50px 1px 1px 1px;
   padding: 1px;
   width: 100%;
+  position: relative;
 }
 
 .members__middle--two .members__swiper--pagination > li {
@@ -1414,11 +1381,6 @@ strong {
 
 .members__middle--two .members__swiper--pagination > li > a {
   display: none;
-}
-
-.members__middle--two .members__swiper--scrollbar {
-  margin-top: 1%;
-  position: relative !important;
 }
 
 .person {

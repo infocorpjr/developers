@@ -13,45 +13,6 @@
  */
 @import "~swiper/dist/css/swiper.css";
 
-/* The slide Swiper component */
-/* BEM PATTERN - block, element, modifier  */
-.swiper__container {
-  margin: 1px auto;
-  width: 90%;
-  cursor: pointer;
-}
-
-.swiper__container--slide {
-  font-size: 2em;
-}
-
-@media (max-width: 500px) {
-  .swiper__container--slide {
-    font-size: 1em;
-  }
-}
-
-.swiper__pagination {
-  margin-top: 20px;
-  width: 100%;
-  position: relative;
-}
-
-.swiper__pagination > span {
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 40px;
-  height: 40px;
-  background-color: $primary-color;
-  outline: none;
-  cursor: pointer;
-}
-
-// SVG ELEMENTS
-.st0 {
-  fill: $primary-color;
-}
-
 /***
  * Jorge Lauro Campos Rodrigues <jorgerodrigues9@outlook.com
  *              _____                   _______                   _____                    _____                    _____
@@ -77,6 +38,54 @@
  *                                                               \|___|                                            \/____/
  */
 
+// ANIMATIONS
+.w {
+  animation: w .9s infinite;
+}
+
+@keyframes w {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes down {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+// Brand animation
+@keyframes one-animation {
+  from {
+    transform: rotateZ(360deg)
+  }
+  to {
+    transform: rotateZ(0deg)
+  }
+}
+
+// End brand animation
+
+.one-animation {
+  transform-origin: center;
+  animation: one-animation 3.5s infinite
+}
+
+// SVG ELEMENTS
+.st0 {
+  fill: $primary-color;
+}
+
 .xtop,
 .yleft {
   background-color: $light-color;
@@ -94,26 +103,6 @@
   left: 0;
   width: 10px;
   height: 8px;
-}
-
-.w {
-  animation: w .9s infinite;
-}
-
-@keyframes w {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-  51% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 /* The menu component */
@@ -144,23 +133,6 @@
 
 .menu__cog-lines {
   fill: $primary-color;
-}
-
-// Brand animation
-@keyframes one-animation {
-  from {
-    transform: rotateZ(360deg)
-  }
-  to {
-    transform: rotateZ(0deg)
-  }
-}
-
-// End brand animation
-
-.one-animation {
-  transform-origin: center;
-  animation: one-animation 3.5s infinite
 }
 
 .menu__right {
@@ -298,8 +270,9 @@
 }
 
 .pnavbar-top .pnavbar-top__up--icon {
+  margin-right: 30px;
   width: 60px;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .pnavbar-top .pnavbar-top__groups {
@@ -445,12 +418,6 @@
   display: inline-block;
 }
 
-@keyframes down {
-  50% {
-    transform: translateY(10px);
-  }
-}
-
 .pfeatured .pfeatured__pdown--icon {
   width: 100%;
   animation: down 1.2s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
@@ -581,7 +548,24 @@
 
 /* Members */
 .members {
+  height: auto;
   position: relative;
+}
+
+.members:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.members__title {
+  margin-top: 0;
 }
 
 .members__top--one,
@@ -595,24 +579,6 @@
 
 .members__top--one {
   width: 40%;
-}
-
-.members__middle--one {
-  width: 40%;
-}
-
-.members__top--one:after,
-.members__middle--one:after,
-.members__bottom--one:after {
-  top: 0;
-  left: 1%;
-  width: 99%;
-  height: 100%;
-  background-color: $primary-color;
-  content: '';
-  position: absolute;
-  z-index: -1;
-  opacity: 0.1;
 }
 
 @media (max-width: 400px) {
@@ -653,12 +619,15 @@
   height: 100%;
 }
 
+.members__middle--two .members__swiper--container {
+  margin-top: 50px;
+}
+
 .members__middle--two .members__swiper--pagination {
-  bottom: 1%;
-  left: 0;
-  margin: 1px;
+  margin: 50px 1px 1px 1px;
   padding: 1px;
   width: 100%;
+  position: relative;
 }
 
 .members__middle--two .members__swiper--pagination > li {
@@ -673,11 +642,6 @@
   display: none;
 }
 
-.members__middle--two .members__swiper--scrollbar {
-  margin-top: 1%;
-  position: relative !important;
-}
-
 .person {
   height: 100%;
   // background-color: beige;
@@ -685,7 +649,6 @@
 }
 
 /* About */
-
 .pabout {
   background-repeat: no-repeat;
   background-position: 80% center;

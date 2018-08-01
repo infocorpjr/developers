@@ -131,18 +131,15 @@
                 </div>
                 <div class="menu__right">
                     <ul class="menu__navigation">
-                        <li class="menu__links--divider">Projetos em</li>
+                        <li class="menu__links--divider">Nossos</li>
                         <li class="menu__links">
-                            <a href="#about" class="menu__link">desenvolvimento</a>
-                        </li>
-                        <li class="menu__links--divider">e</li>
-                        <li class="menu__links">
-                            <a href="#about" class="menu__link">teste</a>
+                            <a href="#projects" class="menu__link">projetos</a>
                         </li>
                         <li class="menu__links--divider">/</li>
                         <li class="menu__links">
                             <a href="#about" class="menu__link">Sobre</a>
                         </li>
+                        <li class="menu__links--divider">nós</li>
                     </ul>
                 </div>
             </div>
@@ -194,7 +191,7 @@
 </div>
 
 <!-- Projects | BEM CSS PATTERN -->
-<div class="projects">
+<div id="projects" class="projects">
     <div class="projects__left">
         <div class="developing">
             <p class="developing__title">Projetos em desenvolvimento</p>
@@ -208,7 +205,8 @@
                 <?php $a = array_diff(scandir('developing'), array('.', '..', 'backup', 'index.php')); ?>
                 <?php foreach ($a as $b): ?>
                     <li class="developing__item">
-                        <a class="developing__link" href="<?php echo "developing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
+                        <a class="developing__link"
+                           href="<?php echo "developing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -225,7 +223,8 @@
                 <?php $a = array_diff(scandir('testing'), array('.', '..', 'backup', 'index.php')); ?>
                 <?php foreach ($a as $b): ?>
                     <li class="testing__item">
-                        <a  class="testing__link" href="<?php echo "testing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
+                        <a class="testing__link"
+                           href="<?php echo "testing/$b" ?>"><?php echo strlen($b) > 13 ? substr($b, 0, 10) . '...' : $b ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -234,19 +233,17 @@
 </div>
 
 <!-- OURS MEMBERS -->
-<div class="section">
-    <div id="members" class="pbox members">
-        <div class="pbox__top">
-            <div class="pbox__top--content members__top--one"></div>
-            <div class="pbox__top--content members__top--two">
-                <ul class="pnavbar-top">
-                    <li class="pnavbar-top__up">
-                        <a class="pnavbar-top__up--link" href="#dev">
-                            <svg class="pnavbar-top__up--icon" version="1.1" id="Layer_1"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
-                                 xml:space="preserve">
+<div id="members" class="pbox members">
+    <div class="pbox__top">
+        <div class="pbox__top--content members__top--one"></div>
+        <div class="pbox__top--content members__top--two">
+            <ul class="pnavbar-top">
+                <li class="pnavbar-top__up">
+                    <svg class="pnavbar-top__up--icon" version="1.1" id="Layer_1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
+                         xml:space="preserve">
                             <g>
                                 <g>
                                     <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
@@ -255,89 +252,80 @@
                                     c3.9-3.9,3.9-10.1,0-14s-10.1-3.9-14,0l-74.3,74.3c-3.9,3.9-3.9,10.1,0,14L265.5,326.1z"/>
                                 </g>
                         </svg>
-                        </a>
-                    </li>
-                    <li class="pnavbar-top__groups">
-                        <p class="pnavbar-top__groups--title">
-                            AQUI ESTÁ
-                            <span class="pnavbar-top__groups--subtitle">
+                </li>
+                <li class="pnavbar-top__groups">
+                    <p class="pnavbar-top__groups--title">
+                        AQUI ESTÁ
+                        <span class="pnavbar-top__groups--subtitle">
                             <br/> NOSSOS DESENVOLVEDORES.
                         </span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
+                    </p>
+                </li>
+            </ul>
         </div>
-        <div class="pbox__middle">
-            <div class="pbox__middle--content members__middle--one">
-                <h3>Infocorp<br/>Developer Team</h3>
-                <!-- If we need pagination -->
-                <ul class="swiper-pagination members__swiper--pagination"></ul>
-            </div>
-            <div class="pbox__middle--content members__middle--two">
-                <!-- Slider main container -->
-                <div id="members_swiper_container" class="swiper-container members__swiper--container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper members__swiper--wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide members__swiper--slide">
-                            <div class="person">
-                                <div class="pbox">
-                                    <div class="pbox__middle">
-                                        <div class="pbox__middle--content">
-                                            <strong>
-                                                let <b>backend</b> = {'Jorge Rodrigues',<br/>'Marcus Goldschmitd',<br/>'Igor
-                                                Breno',<br/>'Igor Jordany',<br/>'Moacyr Pinheiro'}
-                                            </strong>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide members__swiper--slide">
-                            <div class="person">
-                                <div class="pbox">
-                                    <div class="pbox__middle">
-                                        <div class="pbox__middle--content">
-                                            <strong>
-                                                let <b>frontend</b> = {'Jorge Rodrigues','Marcus Goldschmitd',<br/>'Igor
-                                                Breno','Moacyr Pinheiro',<br/>'Luiz Rondon','David Henrique',<br/>'Rubens
-                                                Galvão','Kesley Willian',<br/>'Robson Rodrigo','Thiago Ripardo',<br/>'Igor
-                                                Jordany','Arthur Guimarâes',<br/>'Marco Parente'}
-                                            </strong>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    </div>
+    <div class="pbox__middle">
+        <div class="pbox__middle--content members__middle--one">
+            <h3 class="members__title">Infocorp<br/>Developer Team</h3>
+            <ul class="swiper-pagination members__swiper--pagination"></ul>
+        </div>
+        <div class="pbox__middle--content members__middle--two">
+            <!-- Slider main container -->
+            <div id="members_swiper_container" class="swiper-container members__swiper--container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper members__swiper--wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide members__swiper--slide">
+                        <div class="person">
+                            <strong>
+                                let <b>scrum_master</b> = {'Jorge Rodrigues',<br/>'Fábio Luiz',<br/>
+                                'Ketelem Lemos',<br/>'Valdemar Almeida'}
+                            </strong>
                         </div>
                     </div>
-                    <!-- If we need scrollbar -->
-                    <!--<div class="swiper-scrollbar members__swiper--scrollbar"></div>-->
+                    <div class="swiper-slide members__swiper--slide">
+                        <div class="person">
+                            <strong>
+                                let <b>backend</b> = {'Marcus Goldschmitd',<br/>'Igor
+                                Breno',<br/>'Igor Jordany',<br/>'Moacyr Pinheiro'}
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="swiper-slide members__swiper--slide">
+                        <div class="person">
+                            <strong>
+                                let <b>frontend</b> = {'Marcus Goldschmitd',<br/>'Igor
+                                Breno','Moacyr Pinheiro',<br/>'Luiz Rondon','David Henrique',<br/>'Rubens
+                                Galvão','Kesley Willian',<br/>'Robson Rodrigo','Thiago Ripardo',<br/>'Igor
+                                Jordany','Arthur Guimarâes',<br/>'Marco Parente'}
+                            </strong>
+                        </div>
+                    </div>
                 </div>
-                <!-- If we need pagination -->
-                <ul class="swiper-pagination members__swiper--pagination"></ul>
             </div>
+            <ul class="swiper-pagination members__swiper--pagination"></ul>
         </div>
-        <div class="pbox__bottom">
-            <div class="pbox__bottom--content members__bottom--one"></div>
-            <div class="pbox__bottom--content members__bottom--two">
-                <ul class="pnavbar-bottom">
-                    <li class="pnavbar-bottom__groups">
-                        <p class="pnavbar-bottom__groups--title">
-                            SAIBA +
-                            <span class="pnavbar-bottom__groups--subtitle">
+    </div>
+    <div class="pbox__bottom">
+        <div class="pbox__bottom--content members__bottom--one"></div>
+        <div class="pbox__bottom--content members__bottom--two">
+            <ul class="pnavbar-bottom">
+                <li class="pnavbar-bottom__groups">
+                    <p class="pnavbar-bottom__groups--title">
+                        SAIBA +
+                        <span class="pnavbar-bottom__groups--subtitle">
                             SOBRE NÓS
                         </span>
-                            <span class="w">_</span>
-                        </p>
-                    </li>
-                    <li class="pnavbar-bottom__down">
-                        <a class="pnavbar-bottom__down--link" href="#about">
-                            <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
-                                 xml:space="preserve">
+                        <span class="w">_</span>
+                    </p>
+                </li>
+                <li class="pnavbar-bottom__down">
+                    <a class="pnavbar-bottom__down--link" href="#about">
+                        <svg class="pnavbar-bottom__down--icon" version="1.1" id="Layer_1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;"
+                             xml:space="preserve">
                             <g>
                                 <g>
                                     <path d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
@@ -347,10 +335,9 @@
                                 </g>
                             </g>
                         </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

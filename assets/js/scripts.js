@@ -205,49 +205,15 @@ if (el.addEventListener) {
  */
 
 
-var testing = new __WEBPACK_IMPORTED_MODULE_0_swiper__["a" /* default */]('#testing', {
-    // Optional parameters
-    direction: 'horizontal',
-    touchEventsTarget: 'wrapper',
-    loop: false,
-    autoplay: {
-        delay: 3000
-    },
-    // If we need pagination
-    pagination: {
-        el: '#testing__pagination',
-        clickable: true
-    }
-});
-
-var developing = new __WEBPACK_IMPORTED_MODULE_0_swiper__["a" /* default */]('#developing', {
-    // Optional parameters
-    direction: 'horizontal',
-    touchEventsTarget: 'wrapper',
-    loop: false,
-    autoplay: {
-        delay: 3000
-    },
-    // If we need pagination
-    pagination: {
-        el: '#developing__pagination',
-        clickable: true
-    }
-});
-
 var members = new __WEBPACK_IMPORTED_MODULE_0_swiper__["a" /* default */]('.members__swiper--container', {
     // If we need pagination
     pagination: {
         el: '.members__swiper--pagination',
         clickable: true,
         renderBullet: function renderBullet(index, className) {
-            var texts = ['Backend', 'Frontend'];
+            var texts = ['Management', 'Backend', 'Frontend'];
             return '' + '<li class="' + className + '">' + '<a href="javascript:void(0)">' + (texts.hasOwnProperty(index) ? texts[index] : index + 1) + '</a>' + '</li>';
         }
-    },
-    scrollbar: {
-        el: '.members__swiper--scrollbar',
-        draggable: true
     }
 });
 

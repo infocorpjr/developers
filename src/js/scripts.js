@@ -26,51 +26,17 @@ if (el.addEventListener) {
  */
 import Swiper from 'swiper';
 
-const testing = new Swiper('#testing', {
-    // Optional parameters
-    direction: 'horizontal',
-    touchEventsTarget: 'wrapper',
-    loop: false,
-    autoplay: {
-        delay: 3000,
-    },
-    // If we need pagination
-    pagination: {
-        el: '#testing__pagination',
-        clickable: true
-    },
-});
-
-const developing = new Swiper('#developing', {
-    // Optional parameters
-    direction: 'horizontal',
-    touchEventsTarget: 'wrapper',
-    loop: false,
-    autoplay: {
-        delay: 3000,
-    },
-    // If we need pagination
-    pagination: {
-        el: '#developing__pagination',
-        clickable: true
-    },
-});
-
 const members = new Swiper('.members__swiper--container', {
     // If we need pagination
     pagination: {
         el: '.members__swiper--pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            var texts = ['Backend', 'Frontend'];
+            var texts = ['Management','Backend', 'Frontend'];
             return '' +
                 '<li class="' + className + '">' +
                 '<a href="javascript:void(0)">' + (texts.hasOwnProperty(index) ? texts[index] : (index + 1)) + '</a>' +
                 '</li>';
         }
-    },
-    scrollbar: {
-        el: '.members__swiper--scrollbar',
-        draggable: true,
     },
 });
