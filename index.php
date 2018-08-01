@@ -201,9 +201,9 @@
         <div class="developing">
             <p class="developing__title">Projetos em desenvolvimento</p>
             <p class="developing__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aspernatur blanditiis
-                consectetur consequatur culpa ducimus eum exercitationem fugit, hic inventore iusto nemo nobis numquam
-                provident quam tempore velit. Minus?
+                Após analisarmos os requisitos do cliente, é hora de tirar sua ideia do papel e trazê-la à vida. O
+                projeto é dividido em módulos, contendo pequenas partes que serão construídas pelos envolvidos. Ao
+                final, tem-se uma versão utilizável do produto em questão.
             </p>
             <ul class="developing__list">
                 <!-- Slides -->
@@ -221,7 +221,9 @@
         <div class="testing">
             <p class="testing__title">Projetos em teste</p>
             <p class="testing__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat fugit labore non quasi sit.
+                Antes de ser entregue ao cliente de fato, o produto precisa ser testado e validado, para atingir um
+                padrão mínimo de qualidade e que não haja defeitos, inconsistências e problemas de compatibilidade.
+                Assim, garante-se a satisfação do cliente.
             </p>
             <ul class="testing__list">
                 <!-- Slides -->
