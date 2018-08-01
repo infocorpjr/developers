@@ -383,14 +383,15 @@
             Diretoria de desenvolvimento
             <br/>
             <br/>
-            Acesse infocorpjr.com
+            <i>infocorpjr.com</i>
         </p>
     </div>
     <div class="footer__right">
         <p>
             <b>Rede Social</b>
             <br/>
-            Facebook, Instagram
+            <a href="https://www.facebook.com/infocorpconsultoria/" target="_blank">Facebook</a>,
+            <a href="https://www.instagram.com/infocorpconsultoria/" target="_blank">Instagram</a>
             <br/>
             <b>Contato</b>
             <br/>

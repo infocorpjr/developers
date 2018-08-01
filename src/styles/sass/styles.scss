@@ -67,10 +67,10 @@
 // Brand animation
 @keyframes one-animation {
   from {
-    transform: rotateZ(360deg)
+    transform: rotateZ(0deg)
   }
   to {
-    transform: rotateZ(0deg)
+    transform: rotateZ(360deg)
   }
 }
 
@@ -522,11 +522,18 @@
   border-right: 0;
   margin-top: -10px;
   margin-right: 0;
+  transition: margin-right 0.2s ease-in-out;
+}
+
+.developing__item:hover:after,
+.testing__item:hover:after {
+  margin-right: -10px;
 }
 
 .developing__link,
 .testing__link {
   font-size: 1.2em;
+  display: block;
 }
 
 .developing__title {
@@ -760,7 +767,7 @@
 /* Footer */
 .footer {
   margin: 80px auto 0 auto;
-  width: 80%;
+  width: 100%;
   border-top: 1px solid $dark-color;
 }
 
@@ -776,22 +783,26 @@
 }
 
 .footer__left {
-  width: 40%;
+  padding-left: 10%;
+  width: 30%;
 }
 
 .footer__right {
-  width: 60%;
+  padding-right: 10%;
+  width: 50%;
   text-align: right;
 }
 
 /* W */
 @media (max-width: 600px) {
   .footer__left {
+    padding-left: 0;
     width: 100%;
     text-align: center;
   }
 
   .footer__right {
+    padding-right: 0;
     width: 100%;
     text-align: center;
   }
