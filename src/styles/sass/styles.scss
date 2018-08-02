@@ -90,6 +90,7 @@
 .yleft {
   background-color: $light-color;
   position: absolute;
+  visibility: hidden;
   z-index: 3;
 }
 
@@ -395,6 +396,11 @@
   background-position: 80% center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.pfeatured:hover .xtop,
+.pfeatured:hover .yleft {
+  visibility: visible;
 }
 
 .pfeatured .pfeatured__box {
@@ -799,19 +805,23 @@
 /* W */
 @media (max-width: 600px) {
   .footer__left {
+    margin-left: 10%;
     padding-left: 0;
-    width: 100%;
+    width: 80%;
     text-align: center;
   }
 
   .footer__right {
+    margin-left: 10%;
     padding-right: 0;
-    width: 100%;
+    width: 80%;
     text-align: center;
   }
 }
 
 .copyright {
+  margin: 1px auto;
+  width: 80%;
   text-transform: uppercase;
   text-align: center;
 }
