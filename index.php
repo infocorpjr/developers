@@ -359,7 +359,7 @@
         </div>
     </div>
     <div class="about__right">
-        <p class="about__title">O TEAM DEV</p>
+        <p class="about__title">O TIME DEV</p>
         <p class="about__description">
             O nosso time é formado por alunos dos cursos de Ciência da Computação e Sistemas de
             Informação da Universidade Federal de Mato Grosso. O que fazemos? Desenvolvemos
