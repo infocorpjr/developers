@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Space+Mono');
+
 html,
 body {
   margin: 0;
@@ -16,7 +18,7 @@ a:hover {
 
 body {
   font-size: 12px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Space Mono', monospace;
 }
 
 @media (max-width: 767px) {
