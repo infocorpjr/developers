@@ -81,6 +81,21 @@
   animation: one-animation 3.5s infinite
 }
 
+@keyframes rotateY {
+  from {
+    fill: #eeeeee;
+    transform: rotateY(0deg)
+  }
+  50% {
+    fill: white;
+    transform: rotateY(360deg)
+  }
+  to {
+    fill: #eeeeee;
+    transform: rotateY(0deg)
+  }
+}
+
 // SVG ELEMENTS
 .st0 {
   fill: $primary-color;
@@ -490,7 +505,6 @@
   margin: 100px auto;
   width: 85%;
   position: relative;
-  display: none;
 }
 
 .learn__title {
@@ -503,8 +517,12 @@
 }
 
 .timeline1 {
-  width: 60%;
+  width: 100%;
   border-left: 0 solid $primary-color;
+}
+
+.timeline1__rotateY {
+  animation: rotateY 3.5s infinite
 }
 
 .timeline1__color {
@@ -513,10 +531,11 @@
 
 .timeline1__text {
   font-size: 30px;
+  font-weight: bold;
 }
 
-.timeline1__text--bold {
-  font-weight: bold;
+.timeline1__text--color {
+  fill: $primary-color;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
