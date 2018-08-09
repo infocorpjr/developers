@@ -156,18 +156,18 @@
 
 <div class="jknowing">
     <p class="jknowing__description">
-        O programa da Infocorp para promover conhecimento e educação.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias consequatur cum dolorem et fugiat illo
-        laudantium, nulla officiis quod rem, repudiandae totam! Molestiae omnis rerum sint ut voluptatibus
-        voluptatum.
+        Aqui, o desenvolvedor traça uma rota de conhecimento. Durante o percurso, há checkpoints a serem demarcados, que
+        o mostram até onde ele chegou e quanto mais ele pode alcançar. Conforme a experiência em campo de batalha aumenta,
+        o desenvolvedor pode atingir suas próximas evoluções.
     </p>
     <ul class="jknowing__about">
         <li class="jknowing__about-item">
             <p class="jknowing__about-item-title">O desenvolvedor <b>júnior</b></p>
             <p class="jknowing_level-one">
                 <span></span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis delectus deleniti,
-                eius enim error eum, fuga fugit.
+                É aqui que todos os treinadores começam. Você pode saber muito pouco ou nada, ninguém vai te julgar por isso.
+                O importante é manter o espírito de confiança e continuar tentando. Desvendar os mistérios das tecnologias,
+                aprender como elas funcionam. Uma hora tudo isso entra na sua cabeça e se torna tão natural quanto a luz do dia.
                 <br/>
                 <a class="jknowing__level-link" href="/front">Ok! Vamos lá</a>
             </p>
@@ -175,9 +175,10 @@
         <li class="jknowing__about-item">
             <p class="jknowing__about-item-title">O desenvolvedor <b>pleno</b></p>
             <p class="jknowing_level-two">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis delectus deleniti,
-                eius enim error eum, fuga fugit in natus omnis possimus quas quidem sint tempore tenetur voluptates,
-                voluptatum.
+                Aqui, você já pode dizer que tem certa autoridade no assunto. A responsabilidade é maior também. Mas não se
+                desespere se algo inesperado acontecer, você ainda pode aprender mais; suas habilidades ainda podem ser refinadas,
+                e nessa altura, você já conhecerá melhor suas preferências em relação a quais tecnologias ou abordagens usar. E o
+                mercado de trabalho amará isso em você.
                 <br/>
                 <a class="jknowing__level-link" href="/front">Hum... Bacana</a>
             </p>
@@ -185,7 +186,10 @@
         <li class="jknowing__about-item">
             <p class="jknowing__about-item-title">O desenvolvedor <b>sênior</b></p>
             <p class="jknowing_level-three">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Se você chegou aqui, significa que você derrotou todos os chefões do jogo. O mercado de trabalho te idolatra,
+                e você pode impor suas condições de trabalho. Outros treinadores iniciantes te terão como uma inspiração. Porém
+                é importante lembrar que as tecnologias evoluem, mudam, se aquecem e se esfriam, e você precisa estar pronto pra
+                se adaptar a essas flutuações. Afinal, decisões importantes são colocadas nas suas mãos.
                 <br/>
                 <a class="jknowing__level-link" href="/front">Mercado! Me aguarde ...</a>
             </p>
@@ -196,7 +200,7 @@
 <!-- Away -->
 
 <div class="jway">
-    <h2>Lorem ipsum dolor sit amet</h2>
+    <h2>Desbravando trilhas na Infocorp</h2>
     <svg class="jway__illustration" version="1.1" viewBox="0 0 196.77 127.59" xmlns="http://www.w3.org/2000/svg">
         <g transform="translate(-3.9077 -32.117)">
             <g transform="matrix(-.51021 0 0 -.40799 232.02 159.71)">
@@ -238,11 +242,10 @@
         </g>
     </svg>
     <p class="jway__illustration-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur commodi ducimus eius eos error est,
-        expedita fuga molestias nulla quam repellendus voluptatum? Commodi consequatur earum ex incidunt nulla pariatur.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur autem commodi corporis dolor
-        doloremque ducimus, illo molestiae nam, nihil nostrum obcaecati quas, quisquam veniam voluptatem? Animi
-        recusandae similique vero.
+        São quatro as áreas que o processo de desenvolvimento engloba: front-end, back-end, DevOps e Gerenciamento. Cada
+        uma delas possui aprendizados e atuações específicos. Como descobrir com qual ou quais delas você tem mais afinidade?
+        Trilhando elas! Durante o percurso, você perceberá se prefere estar envolvido em processo x ou y. No fim, é importante
+        ter um conhecimento geral básico sobre todas elas, pois a integração entre elas também depende disso.
     </p>
 </div>
 
