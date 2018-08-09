@@ -456,7 +456,7 @@
 </div>
 
 <!-- About | BEM CSS PATTERN -->
-<div class="about">
+<div id="about" class="about">
     <div class="about__left">
         <div class="about__identity">
             <img class="about__illustration"

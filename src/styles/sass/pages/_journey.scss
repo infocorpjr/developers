@@ -3,9 +3,9 @@
 .jfeatured {
   padding-left: 3%;
   padding-right: 3%;
-  height: 70%;
-  background-color: lighten($primary-color, 47%);
-  border-bottom: 20px solid lighten($dark-color, 40%);
+  height: 65%;
+  background-color: lighten($dark-color, 5%);
+  border-bottom: 20px solid lighten($primary-color, 20%);
   position: relative;
   overflow: hidden;
 }
@@ -15,7 +15,7 @@
   right: 5%;
   height: 100%;
   max-height: 500px;
-  opacity: 0.4;
+  opacity: 0.25;
   position: absolute;
 }
 
@@ -30,5 +30,6 @@
 .jfeatured__title {
   text-align: left;
   font-size: 2.1em;
-  color: lighten($dark-color, 40%);
+  color: lighten($dark-color, 50%);
+  text-shadow: 35px 25px 10px lighten($primary-color, 25%);
 }
