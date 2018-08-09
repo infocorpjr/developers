@@ -83,16 +83,14 @@
 
 @keyframes rotateY {
   from {
-    fill: #eeeeee;
-    transform: rotateY(0deg)
-  }
-  50% {
-    fill: white;
-    transform: rotateY(360deg)
+    margin-top: 50px;
+    fill: $primary-color;
+    transform: scale(0.5);
   }
   to {
-    fill: #eeeeee;
-    transform: rotateY(0deg)
+    fill: $primary-color;
+    transform: scale(1);
+    opacity: 0;
   }
 }
 
@@ -188,8 +186,70 @@
   display: inline-block;
 }
 
-/* The box component */
-/* BEM PATTERN - block, element, modifier  */
+/// The box component - BEM PATTERN ////////////////////////////////////////////////////////////////////////////////////
+
+.box {
+  width: 100%;
+  height: 100%;
+  // Flexbox
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  // End flexbox
+  position: relative;
+}
+
+// Modernizr, no flexbox available.
+.no-flexbox .box {
+  display: table;
+  table-layout: fixed;
+}
+
+.box__top,
+.box__middle,
+.box__bottom {
+  width: 100%;
+  position: relative;
+}
+
+// Modernizr, no flexbox available.
+.no-flexbox .box__top,
+.no-flexbox .box__middle,
+.no-flexbox .box__bottom {
+  display: table-row;
+}
+
+.box__top--larger,
+.box__middle--larger,
+.box__bottom--larger {
+  flex: 1;
+}
+
+// Modernizr, no flexbox available.
+.no-flexbox .box__top--larger,
+.no-flexbox .box__middle--larger,
+.no-flexbox .box__bottom--larger {
+  height: 100%;
+}
+
+.box__content {
+  height: 100%;
+  // Flexbox
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  // End flexbox
+}
+
+// Modernizr, no flexbox available.
+.no-flexbox .box__content {
+  height: auto;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+///  The box component - BEM PATTERN ///////////////////////////////////////////////////////////////////////////////////
 
 .pbox {
   width: 100%;
@@ -522,7 +582,7 @@
 }
 
 .timeline1__rotateY {
-  animation: rotateY 3.5s infinite
+  animation: rotateY 5s infinite;
 }
 
 .timeline1__color {
@@ -536,6 +596,14 @@
 
 .timeline1__text--color {
   fill: $primary-color;
+}
+
+.learn__links {
+  text-align: right;
+}
+
+.learn__link {
+  color: $primary-color;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -886,3 +954,5 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@import "pages/journey";

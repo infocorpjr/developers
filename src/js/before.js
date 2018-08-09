@@ -1,5 +1,5 @@
 /*!
- * modernizr v3.6.0
+ * Modernizr v3.6.0
  * Build https://modernizr.com/download?-backgroundsize-cssanimations-flexbox-flexboxlegacy-setclasses-dontmin
  *
  * Copyright (c)
