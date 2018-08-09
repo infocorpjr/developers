@@ -62,7 +62,8 @@
 
 <!-- Journey featured / BEM CSS PATTERN -->
 <div id="jfeatured" class="jfeatured">
-    <img class="jfeatured__background-image" src="../images/developer.png" alt="Developer illustration" title="Developer Illustration">
+    <img class="jfeatured__background-image" src="../images/developer.png" alt="Developer illustration"
+         title="Developer Illustration">
     <div class="box">
         <div class="box__top">
             <div class="box__content">
@@ -150,6 +151,46 @@
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="jknowing">
+    <p class="jknowing__description">
+        O programa da Infocorp para promover conhecimento e educação.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias consequatur cum dolorem et fugiat illo
+        laudantium, nulla officiis quod rem, repudiandae totam! Molestiae omnis rerum sint ut voluptatibus
+        voluptatum.
+    </p>
+    <ul class="jknowing__about">
+        <li class="jknowing__about-item">
+            <p class="jknowing__about-item-title">O desenvolvedor <b>júnior</b></p>
+            <p class="jknowing_level-one">
+                <span></span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis delectus deleniti,
+                eius enim error eum, fuga fugit.
+                <br/>
+                <a class="jknowing__level-link" href="/front">Ok! Vamos lá</a>
+            </p>
+        </li>
+        <li class="jknowing__about-item">
+            <p class="jknowing__about-item-title">O desenvolvedor <b>pleno</b></p>
+            <p class="jknowing_level-two">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis delectus deleniti,
+                eius enim error eum, fuga fugit in natus omnis possimus quas quidem sint tempore tenetur voluptates,
+                voluptatum.
+                <br/>
+                <a class="jknowing__level-link" href="/front">Hum... Bacana</a>
+            </p>
+        </li>
+        <li class="jknowing__about-item">
+            <p class="jknowing__about-item-title">O desenvolvedor <b>sênior</b></p>
+            <p class="jknowing_level-three">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <br/>
+                <a class="jknowing__level-link" href="/front">Mercado! Me aguarde ...</a>
+            </p>
+        </li>
+    </ul>
 </div>
 
 

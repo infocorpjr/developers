@@ -33,3 +33,71 @@
   color: lighten($dark-color, 50%);
   text-shadow: 35px 25px 10px lighten($primary-color, 25%);
 }
+
+.jknowing {
+  margin: 100px auto;
+  width: 85%;
+}
+
+.jknowing__description {
+  font-size: 1em;
+}
+
+.jknowing__description:first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.jknowing__about {
+  padding: 0;
+  list-style-type: none;
+}
+
+.jknowing__about:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.jknowing__about-item {
+  width: 100 / 3 * 1%;
+  float: left;
+}
+
+@media (max-width: 700px) {
+  .jknowing__about-item {
+    width: 100%;
+  }
+}
+
+.jknowing__about-item-title {
+  font-size: 1.5em;
+}
+
+.jknowing_level-one,
+.jknowing_level-two,
+.jknowing_level-three {
+  padding: 5%;
+  border-left-width: 3px;
+  border-left-style: solid;
+  font-size: 1em;
+}
+
+.jknowing_level-one {
+  border-left-color: $color-blue;
+}
+
+.jknowing_level-two {
+  border-left-color: $color-yellow;
+}
+
+.jknowing_level-three {
+  border-left-color: $color-orange;
+}
+
+.jknowing__level-link {
+  margin-top: 20px;
+  font-weight: bold;
+  color: $primary-color;
+  display: inline-block;
+}
