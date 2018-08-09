@@ -101,3 +101,39 @@
   color: $primary-color;
   display: inline-block;
 }
+
+.jway {
+  margin: 100px auto 0 auto;
+  width: 80%;
+}
+
+.jway:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.jway__illustration {
+  margin: 1% auto;
+  width: 60%;
+  display: block;
+  position: relative;
+}
+
+.jway__illustration-way {
+  fill: lighten($primary-color, 40%);
+}
+
+.jway__illustration-indicator {
+  fill: lighten($dark-color, 30%);
+}
+
+.jway__illustration-text {
+  font-size: 5px;
+  fill: lighten($dark-color, 20%);
+
+}
+
+.jway__illustration-description {
+  position: relative;
+}
