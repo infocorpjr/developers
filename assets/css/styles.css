@@ -616,6 +616,31 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px;
 }
+/***
+ * Jorge Lauro Campos Rodrigues <jorgerodrigues9@outlook.com
+ *              _____                   _______                   _____                    _____                    _____
+ *             /\    \                 /::\    \                 /\    \                  /\    \                  /\    \
+ *            /::\    \               /::::\    \               /::\    \                /::\    \                /::\    \
+ *            \:::\    \             /::::::\    \             /::::\    \              /::::\    \              /::::\    \
+ *             \:::\    \           /::::::::\    \           /::::::\    \            /::::::\    \            /::::::\    \
+ *              \:::\    \         /:::/~~\:::\    \         /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \
+ *               \:::\    \       /:::/    \:::\    \       /:::/__\:::\    \        /:::/  \:::\    \        /:::/__\:::\    \
+ *               /::::\    \     /:::/    / \:::\    \     /::::\   \:::\    \      /:::/    \:::\    \      /::::\   \:::\    \
+ *      _____   /::::::\    \   /:::/____/   \:::\____\   /::::::\   \:::\    \    /:::/    / \:::\    \    /::::::\   \:::\    \
+ *     /\    \ /:::/\:::\    \ |:::|    |     |:::|    | /:::/\:::\   \:::\____\  /:::/    /   \:::\ ___\  /:::/\:::\   \:::\    \
+ *    /::\    /:::/  \:::\____\|:::|____|     |:::|    |/:::/  \:::\   \:::|    |/:::/____/  ___\:::|    |/:::/__\:::\   \:::\____\
+ *    \:::\  /:::/    \::/    / \:::\    \   /:::/    / \::/   |::::\  /:::|____|\:::\    \ /\  /:::|____|\:::\   \:::\   \::/    /
+ *     \:::\/:::/    / \/____/   \:::\    \ /:::/    /   \/____|:::::\/:::/    /  \:::\    /::\ \::/    /  \:::\   \:::\   \/____/
+ *      \::::::/    /             \:::\    /:::/    /          |:::::::::/    /    \:::\   \:::\ \/____/    \:::\   \:::\    \
+ *       \::::/    /               \:::\__/:::/    /           |::|\::::/    /      \:::\   \:::\____\       \:::\   \:::\____\
+ *        \::/    /                 \::::::::/    /            |::| \::/____/        \:::\  /:::/    /        \:::\   \::/    /
+ *         \/____/                   \::::::/    /             |::|  ~|               \:::\/:::/    /          \:::\   \/____/
+ *                                    \::::/    /              |::|   |                \::::::/    /            \:::\    \
+ *                                     \::/____/               \::|   |                 \::::/    /              \:::\____\
+ *                                      ~~                      \:|   |                  \::/____/                \::/    /
+ *                                                               \|___|                                            \/____/
+ */
+
 /* COLORS UTILITIES */
 
 html,
@@ -694,31 +719,6 @@ strong {
  * Released under the MIT License
  *
  * Released on: June 5, 2018
- */
-
-/***
- * Jorge Lauro Campos Rodrigues <jorgerodrigues9@outlook.com
- *              _____                   _______                   _____                    _____                    _____
- *             /\    \                 /::\    \                 /\    \                  /\    \                  /\    \
- *            /::\    \               /::::\    \               /::\    \                /::\    \                /::\    \
- *            \:::\    \             /::::::\    \             /::::\    \              /::::\    \              /::::\    \
- *             \:::\    \           /::::::::\    \           /::::::\    \            /::::::\    \            /::::::\    \
- *              \:::\    \         /:::/~~\:::\    \         /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \
- *               \:::\    \       /:::/    \:::\    \       /:::/__\:::\    \        /:::/  \:::\    \        /:::/__\:::\    \
- *               /::::\    \     /:::/    / \:::\    \     /::::\   \:::\    \      /:::/    \:::\    \      /::::\   \:::\    \
- *      _____   /::::::\    \   /:::/____/   \:::\____\   /::::::\   \:::\    \    /:::/    / \:::\    \    /::::::\   \:::\    \
- *     /\    \ /:::/\:::\    \ |:::|    |     |:::|    | /:::/\:::\   \:::\____\  /:::/    /   \:::\ ___\  /:::/\:::\   \:::\    \
- *    /::\    /:::/  \:::\____\|:::|____|     |:::|    |/:::/  \:::\   \:::|    |/:::/____/  ___\:::|    |/:::/__\:::\   \:::\____\
- *    \:::\  /:::/    \::/    / \:::\    \   /:::/    / \::/   |::::\  /:::|____|\:::\    \ /\  /:::|____|\:::\   \:::\   \::/    /
- *     \:::\/:::/    / \/____/   \:::\    \ /:::/    /   \/____|:::::\/:::/    /  \:::\    /::\ \::/    /  \:::\   \:::\   \/____/
- *      \::::::/    /             \:::\    /:::/    /          |:::::::::/    /    \:::\   \:::\ \/____/    \:::\   \:::\    \
- *       \::::/    /               \:::\__/:::/    /           |::|\::::/    /      \:::\   \:::\____\       \:::\   \:::\____\
- *        \::/    /                 \::::::::/    /            |::| \::/____/        \:::\  /:::/    /        \:::\   \::/    /
- *         \/____/                   \::::::/    /             |::|  ~|               \:::\/:::/    /          \:::\   \/____/
- *                                    \::::/    /              |::|   |                \::::::/    /            \:::\    \
- *                                     \::/____/               \::|   |                 \::::/    /              \:::\____\
- *                                      ~~                      \:|   |                  \::/____/                \::/    /
- *                                                               \|___|                                            \/____/
  */
 
 .pulse {
@@ -807,12 +807,11 @@ strong {
           animation: one-animation 3.5s infinite;
 }
 
-@-webkit-keyframes rotateY {
+@-webkit-keyframes learn__timeline__illustration__circle--animation {
   from {
-    margin-top: 50px;
     fill: #43A047;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.1) translateY(-75%);
+            transform: scale(0.1) translateY(-75%);
   }
 
   to {
@@ -823,12 +822,11 @@ strong {
   }
 }
 
-@keyframes rotateY {
+@keyframes learn__timeline__illustration__circle--animation {
   from {
-    margin-top: 50px;
     fill: #43A047;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.1) translateY(-75%);
+            transform: scale(0.1) translateY(-75%);
   }
 
   to {
@@ -841,26 +839,6 @@ strong {
 
 .st0 {
   fill: #43A047;
-}
-
-.xtop,
-.yleft {
-  background-color: white;
-  position: absolute;
-  visibility: hidden;
-  z-index: 3;
-}
-
-.xtop {
-  top: 0;
-  width: 8px;
-  height: 10px;
-}
-
-.yleft {
-  left: 0;
-  width: 10px;
-  height: 8px;
 }
 
 /* The menu component */
@@ -1231,9 +1209,60 @@ strong {
   overflow-y: auto;
 }
 
-/* BEM PATTERN - block, element, modifier  */
+/* Footer */
 
-/* Featured */
+.footer {
+  margin: 80px auto 0 auto;
+  width: 100%;
+  border-top: 1px solid #0f0f0f;
+}
+
+.footer:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.footer__left,
+.footer__right {
+  float: left;
+}
+
+.footer__left {
+  padding-left: 10%;
+  width: 30%;
+}
+
+.footer__right {
+  padding-right: 10%;
+  width: 50%;
+  text-align: right;
+}
+
+/* W */
+
+@media (max-width: 600px) {
+  .footer__left {
+    margin-left: 10%;
+    padding-left: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .footer__right {
+    margin-left: 10%;
+    padding-right: 0;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.copyright {
+  margin: 1px auto;
+  width: 80%;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 .pfeatured {
   height: 80%;
@@ -1243,6 +1272,26 @@ strong {
   background-position: 80% center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.xtop,
+.yleft {
+  background-color: white;
+  position: absolute;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.xtop {
+  top: 0;
+  width: 8px;
+  height: 10px;
+}
+
+.yleft {
+  left: 0;
+  width: 10px;
+  height: 8px;
 }
 
 .pfeatured:hover .xtop,
@@ -1351,34 +1400,30 @@ strong {
   width: 100%;
 }
 
-.timeline1 {
+.learn__timeline__illustration {
   width: 100%;
   border-left: 0 solid #43A047;
 }
 
-.timeline1__rotateY {
-  -webkit-animation: rotateY 5s infinite;
-          animation: rotateY 5s infinite;
-}
-
-.timeline1__color {
+.learn__timeline__illustration__elements--primary {
   fill: #43A047;
 }
 
-.timeline1__text {
+.learn__timeline__illustration__circle--animation {
+  -webkit-animation: learn__timeline__illustration__circle--animation 4s infinite;
+          animation: learn__timeline__illustration__circle--animation 4s infinite;
+}
+
+.learn__timeline__illustration__text {
   font-size: 30px;
   font-weight: bold;
-}
-
-.timeline1__text--color {
-  fill: #43A047;
 }
 
 .learn__links {
   text-align: right;
 }
 
-.learn__link {
+.learn__links__link {
   color: #43A047;
 }
 
@@ -1685,61 +1730,6 @@ strong {
   .about__title {
     margin-top: 80px;
   }
-}
-
-/* Footer */
-
-.footer {
-  margin: 80px auto 0 auto;
-  width: 100%;
-  border-top: 1px solid #0f0f0f;
-}
-
-.footer:after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
-.footer__left,
-.footer__right {
-  float: left;
-}
-
-.footer__left {
-  padding-left: 10%;
-  width: 30%;
-}
-
-.footer__right {
-  padding-right: 10%;
-  width: 50%;
-  text-align: right;
-}
-
-/* W */
-
-@media (max-width: 600px) {
-  .footer__left {
-    margin-left: 10%;
-    padding-left: 0;
-    width: 80%;
-    text-align: center;
-  }
-
-  .footer__right {
-    margin-left: 10%;
-    padding-right: 0;
-    width: 80%;
-    text-align: center;
-  }
-}
-
-.copyright {
-  margin: 1px auto;
-  width: 80%;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 /* Journey featured */

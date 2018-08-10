@@ -21,6 +21,9 @@
     "scroll-js": "^1.9.1"
   },
   "dependencies": {
+    "d3": "^5.5.0",
+    "d3-hierarchy": "^1.1.6",
+    "d3-tree": "^1.0.20",
     "swiper": "^4.3.5"
   }
 }

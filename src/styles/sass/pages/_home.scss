@@ -1,0 +1,459 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Featured section /////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.pfeatured {
+  height: 80%;
+  background-color: $dark-color;
+  background-image: url("../../img/desenhando.png");
+  background-size: 30%;
+  background-position: 80% center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.xtop,
+.yleft {
+  background-color: $light-color;
+  position: absolute;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.xtop {
+  top: 0;
+  width: 8px;
+  height: 10px;
+}
+
+.yleft {
+  left: 0;
+  width: 10px;
+  height: 8px;
+}
+
+.pfeatured:hover .xtop,
+.pfeatured:hover .yleft {
+  visibility: visible;
+}
+
+.pfeatured .pfeatured__box {
+  margin: 1px
+}
+
+.pfeatured .pfeatured__box--brand {
+  width: 30%;
+}
+
+.pfeatured .pfeatured__box--line {
+  margin: 4px 0;
+  font-size: 3em;
+  color: $primary-color;
+}
+
+.pfeatured .pfeatured__pdown {
+  margin: 0;
+  text-align: center;
+}
+
+.pfeatured .pfeatured__pdown--link {
+  margin: 1px auto;
+  width: 60px;
+  display: inline-block;
+}
+
+.pfeatured .pfeatured__pdown--icon {
+  width: 100%;
+  animation: down 1.2s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+}
+
+.pfeatured .pfeatured__pdown--icon:hover {
+  animation-play-state: paused;
+}
+
+/* W */
+@media (max-width: 300px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
+  }
+  .pfeatured .pfeatured__pdown--link {
+    width: 60px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 400px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
+  }
+  .pfeatured .pfeatured__pdown--link {
+    width: 60px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
+  }
+  .pfeatured .pfeatured__pdown--link {
+    width: 60px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .pfeatured {
+    background-size: 70%;
+    background-position: 80% bottom;
+  }
+}
+
+/* H */
+@media (max-height: 300px) {
+  .pfeatured .pfeatured__pdown--link {
+    width: 40px;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//// Learning section ////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.learn {
+  margin: 100px auto;
+  width: 85%;
+  position: relative;
+}
+
+.learn__title {
+  margin-left: -0.5%;
+  font-size: 2em;
+}
+
+.learn__timeline {
+  width: 100%;
+}
+
+.learn__timeline__illustration {
+  width: 100%;
+  border-left: 0 solid $primary-color;
+}
+
+.learn__timeline__illustration__elements--primary {
+  fill: $primary-color;
+}
+
+.learn__timeline__illustration__circle--animation {
+  animation: learn__timeline__illustration__circle--animation 4s infinite;
+}
+
+
+.learn__timeline__illustration__text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.learn__links {
+  text-align: right;
+}
+
+.learn__links__link {
+  color: $primary-color;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//// Project section ////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.projects {
+  margin: 100px auto;
+  padding-bottom: 40px;
+  width: 85%;
+  position: relative;
+}
+
+.projects:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.projects__left,
+.projects__right {
+  width: 50%;
+  float: left;
+}
+
+.developing__list,
+.testing__list {
+  margin: 40px 0 0 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.developing__item,
+.testing__item {
+  margin: 20px 0;
+  position: relative;
+}
+
+.developing__item:after,
+.testing__item:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: black;
+  border-right: 0;
+  margin-top: -10px;
+  margin-right: 0;
+  transition: margin-right 0.2s ease-in-out;
+}
+
+.developing__item:hover:after,
+.testing__item:hover:after {
+  margin-right: -10px;
+}
+
+.developing__link,
+.testing__link {
+  font-size: 1.2em;
+  display: block;
+}
+
+.developing__title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.testing__title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* W */
+@media (max-width: 500px) {
+  .projects {
+    margin: 50px auto 10px auto;
+  }
+  .projects__left,
+  .projects__right {
+    width: 100%;
+    float: none;
+  }
+  .testing {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 501px) {
+  .projects:before {
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    content: '';
+    position: absolute;
+  }
+  .developing {
+    padding-right: 15%;
+  }
+  .testing {
+    padding-left: 15%;
+  }
+}
+
+/* Members */
+.members {
+  height: auto;
+  position: relative;
+}
+
+.members:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.members__title {
+  margin-top: 0;
+}
+
+.members__top--one,
+.members__top--two,
+.members__middle--one,
+.members__middle--two,
+.members__bottom--one,
+.members__bottom--two {
+  position: relative;
+}
+
+.members__top--one {
+  width: 30%;
+}
+
+@media (max-width: 400px) {
+  .members__top--one {
+    width: 0;
+  }
+  .members__middle--one {
+    visibility: hidden;
+  }
+}
+
+.members__middle--one .members__swiper--pagination {
+  margin: 1px;
+  padding: 1px;
+  position: relative;
+}
+
+.members__middle--one .members__swiper--pagination > li {
+  margin-bottom: 5px;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left;
+  display: block;
+  outline: none !important;
+}
+
+.members__middle--one .members__swiper--pagination > li > a {
+  font-weight: bold;
+  font-size: 1em;
+  color: $primary-color;
+}
+
+.members__middle--two .members__swiper--container,
+.members__middle--two .members__swiper--wrapper,
+.members__middle--two .members__swiper--slide {
+  height: 100%;
+}
+
+.members__middle--two .members__swiper--container {
+  margin-top: 50px;
+}
+
+.members__middle--two .members__swiper--pagination {
+  margin: 50px 1px 1px 1px;
+  padding: 1px;
+  width: 100%;
+  position: relative;
+}
+
+.members__middle--two .members__swiper--pagination > li {
+  margin: 1px 5px;
+  width: 25px;
+  height: 25px;
+  background-color: $primary-color;
+  outline: none;
+}
+
+.members__middle--two .members__swiper--pagination > li > a {
+  display: none;
+}
+
+.person {
+  height: 100%;
+  // background-color: beige;
+  text-align: center;
+}
+
+/* About */
+.about {
+  margin: 200px auto;
+  width: 80%;
+  display: table;
+}
+
+.about__left,
+.about__right {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about__left {
+  width: 40%;
+}
+
+.about__identity {
+  margin-right: auto;
+  max-width: 500px;
+  position: relative;
+}
+
+.about__identity:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  content: '';
+  transform: rotate(20deg);
+  position: absolute;
+  z-index: -2;
+  opacity: 0.4;
+}
+
+.about__identity:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed $primary-color;
+  content: '';
+  transform: rotate(-20deg);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.about__illustration {
+  margin: 1px auto;
+  padding: 10% 5%;
+  width: 70%;
+  max-width: 500px;
+  background-color: white;
+  display: block;
+}
+
+.about__title,
+.about__description {
+  margin-left: auto;
+  width: 80%;
+}
+
+.about__title {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* W */
+@media (max-width: 500px) {
+  .about {
+    margin: 80px auto;
+  }
+  .about__left,
+  .about__right {
+    display: table-row;
+  }
+  .about__title,
+  .about__description {
+    width: 100%;
+  }
+
+  .about__title {
+    margin-top: 80px;
+  }
+}
