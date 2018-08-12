@@ -137,3 +137,44 @@
 .jway__illustration-description {
   position: relative;
 }
+
+.hierarchy {
+  margin: 50px auto;
+  width: 80%;
+}
+
+.hierarchy__tree {
+  width: 100%;
+  height: 500px;
+}
+
+.hierarchy__tree__group {
+  transform: translateX(15px);
+}
+
+.hierarchy__tree__link {
+  fill: none;
+  stroke: $dark-color;
+  // stroke-dasharray: 20,10,5,5,5,10;
+  stroke-width: 2px;
+  stroke-opacity: 0.5;
+}
+
+.hierarchy__tree__node > circle {
+  fill: $dark-color;
+  stroke: $dark-color;
+  stroke-width: 5px;
+}
+
+.hierarchy__tree__node--internal > circle {
+  fill: $primary-color;
+  stroke: $primary-color;
+  stroke-width: 8px;
+}
+
+.hierarchy__tree__node--leaf {
+}
+
+.hierarchy__tree__text {
+  text-anchor: start !important;
+}

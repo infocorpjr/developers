@@ -16,14 +16,13 @@
   "license": "MIT",
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "domready": "^1.0.8",
     "laravel-mix": "^2.1.11",
     "scroll-js": "^1.9.1"
   },
   "dependencies": {
     "d3": "^5.5.0",
+    "d3-fetch": "^1.1.0",
     "d3-hierarchy": "^1.1.6",
-    "d3-tree": "^1.0.20",
     "swiper": "^4.3.5"
   }
 }

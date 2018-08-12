@@ -250,6 +250,10 @@
 </div>
 
 
+<div class="hierarchy">
+    <svg xmlns="http://www.w3.org/2000/svg" class="hierarchy__tree"></svg>
+</div>
+
 <!-- Footer | BEM CSS PATTERN -->
 <div class="footer">
     <div class="footer__left">
