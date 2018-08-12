@@ -25,7 +25,7 @@ var svg = d3.select(element),
     // Obtém o a largura do elemento pai.
     width = element.parentNode.offsetWidth / 1.5,
     // Obtém a altura do elemento pai.
-    height = element.parentNode.offsetHeight,
+    height = element.parentNode.offsetHeight / 1.1,
     // Adiciona um grupo para o elemento.
     g = svg.append("g");
 
@@ -40,10 +40,12 @@ var stratify = d3.stratify()
     });
 
 d3.csv("flare.csv").then(function (data) {
-    var root = stratify(data)
+   /* var root = stratify(data)
         .sort(function (a, b) {
             return (a.height - b.height) || a.id.localeCompare(b.id);
-        });
+        });*/
+
+   var root = stratify(data);
 
     cluster(root);
 

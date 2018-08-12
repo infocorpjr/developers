@@ -157,7 +157,8 @@
 <div class="jknowing">
     <p class="jknowing__description">
         Aqui, o desenvolvedor traça uma rota de conhecimento. Durante o percurso, há checkpoints a serem demarcados, que
-        o mostram até onde ele chegou e quanto mais ele pode alcançar. Conforme a experiência em campo de batalha aumenta,
+        o mostram até onde ele chegou e quanto mais ele pode alcançar. Conforme a experiência em campo de batalha
+        aumenta,
         o desenvolvedor pode atingir suas próximas evoluções.
     </p>
     <ul class="jknowing__about">
@@ -165,9 +166,12 @@
             <p class="jknowing__about-item-title">O desenvolvedor <b>júnior</b></p>
             <p class="jknowing_level-one">
                 <span></span>
-                É aqui que todos os treinadores começam. Você pode saber muito pouco ou nada, ninguém vai te julgar por isso.
-                O importante é manter o espírito de confiança e continuar tentando. Desvendar os mistérios das tecnologias,
-                aprender como elas funcionam. Uma hora tudo isso entra na sua cabeça e se torna tão natural quanto a luz do dia.
+                É aqui que todos os treinadores começam. Você pode saber muito pouco ou nada, ninguém vai te julgar por
+                isso.
+                O importante é manter o espírito de confiança e continuar tentando. Desvendar os mistérios das
+                tecnologias,
+                aprender como elas funcionam. Uma hora tudo isso entra na sua cabeça e se torna tão natural quanto a luz
+                do dia.
                 <br/>
                 <a class="jknowing__level-link" href="/front">Ok! Vamos lá</a>
             </p>
@@ -175,9 +179,12 @@
         <li class="jknowing__about-item">
             <p class="jknowing__about-item-title">O desenvolvedor <b>pleno</b></p>
             <p class="jknowing_level-two">
-                Aqui, você já pode dizer que tem certa autoridade no assunto. A responsabilidade é maior também. Mas não se
-                desespere se algo inesperado acontecer, você ainda pode aprender mais; suas habilidades ainda podem ser refinadas,
-                e nessa altura, você já conhecerá melhor suas preferências em relação a quais tecnologias ou abordagens usar. E o
+                Aqui, você já pode dizer que tem certa autoridade no assunto. A responsabilidade é maior também. Mas não
+                se
+                desespere se algo inesperado acontecer, você ainda pode aprender mais; suas habilidades ainda podem ser
+                refinadas,
+                e nessa altura, você já conhecerá melhor suas preferências em relação a quais tecnologias ou abordagens
+                usar. E o
                 mercado de trabalho amará isso em você.
                 <br/>
                 <a class="jknowing__level-link" href="/front">Hum... Bacana</a>
@@ -186,9 +193,12 @@
         <li class="jknowing__about-item">
             <p class="jknowing__about-item-title">O desenvolvedor <b>sênior</b></p>
             <p class="jknowing_level-three">
-                Se você chegou aqui, significa que você derrotou todos os chefões do jogo. O mercado de trabalho te idolatra,
-                e você pode impor suas condições de trabalho. Outros treinadores iniciantes te terão como uma inspiração. Porém
-                é importante lembrar que as tecnologias evoluem, mudam, se aquecem e se esfriam, e você precisa estar pronto pra
+                Se você chegou aqui, significa que você derrotou todos os chefões do jogo. O mercado de trabalho te
+                idolatra,
+                e você pode impor suas condições de trabalho. Outros treinadores iniciantes te terão como uma
+                inspiração. Porém
+                é importante lembrar que as tecnologias evoluem, mudam, se aquecem e se esfriam, e você precisa estar
+                pronto pra
                 se adaptar a essas flutuações. Afinal, decisões importantes são colocadas nas suas mãos.
                 <br/>
                 <a class="jknowing__level-link" href="/front">Mercado! Me aguarde ...</a>
@@ -243,12 +253,22 @@
     </svg>
     <p class="jway__illustration-description">
         São quatro as áreas que o processo de desenvolvimento engloba: front-end, back-end, DevOps e Gerenciamento. Cada
-        uma delas possui aprendizados e atuações específicos. Como descobrir com qual ou quais delas você tem mais afinidade?
-        Trilhando elas! Durante o percurso, você perceberá se prefere estar envolvido em processo x ou y. No fim, é importante
+        uma delas possui aprendizados e atuações específicos. Como descobrir com qual ou quais delas você tem mais
+        afinidade?
+        Trilhando elas! Durante o percurso, você perceberá se prefere estar envolvido em processo x ou y. No fim, é
+        importante
         ter um conhecimento geral básico sobre todas elas, pois a integração entre elas também depende disso.
     </p>
 </div>
 
+<div class="program">
+    <h3 class="program__title">Divisão & conquista</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero porro praesentium qui velit voluptatibus. A
+        aperiam atque commodi consequatur explicabo impedit ipsam, maxime necessitatibus, officia provident quibusdam
+        repudiandae totam voluptates.
+    </p>
+</div>
 
 <div class="hierarchy">
     <svg xmlns="http://www.w3.org/2000/svg" class="hierarchy__tree"></svg>
