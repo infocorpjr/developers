@@ -145,49 +145,34 @@
 
 .hierarchy {
   margin: 50px auto;
-  width: 80%;
+  width: 100%;
   position: relative;
 }
 
-/*.hierarchy:before {
-  left: 0;
-  bottom: 0;
-  width: 200px;
-  height: 50px;
-  background: url("../../../svg/infocorp.svg") no-repeat center;
-  content: '';
-  position: absolute;
-  opacity: 0.1;
-}*/
-
 .hierarchy__tree {
   width: 100%;
-  height: 700px;
-  border-left: 2px solid lighten($primary-color, 50%);
-  border-bottom: 2px dashed lighten($primary-color, 50%);
+  height: 3000px;
   position: relative;
 }
 
 @keyframes hierarchy__tree__link {
   0% {
-    stroke-dasharray: 20, 10, 5, 5, 5, 10;
-  }
-  50% {
-    stroke: $primary-color;
-    stroke-dasharray: 200, 10, 55, 55, 55, 30;
+    stroke-dasharray: 20;
   }
   100% {
-    stroke-dasharray: 20, 10, 5, 5, 5, 10;
+    stroke: $primary-color;
+    stroke-dasharray: 200;
   }
 }
 
 .hierarchy__tree__link {
   fill: none;
   stroke: $dark-color;
-  stroke-dasharray: 20, 10, 5, 5, 5, 10;
+  stroke-dasharray: 0;
   stroke-width: 8px;
   stroke-opacity: 0.1;
-  animation: hierarchy__tree__link 10s infinite;
+  animation: hierarchy__tree__link 5s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
 .hierarchy__tree__node > circle {
@@ -196,13 +181,22 @@
   stroke-width: 5px;
 }
 
-.hierarchy__tree__node--internal > circle {
-  fill: $primary-color;
-  stroke: $primary-color;
-  stroke-width: 8px;
+@keyframes hierarchy__tree__node--internal {
+  0% {
+    stroke-dasharray: 5
+  }
+  100% {
+    stroke: $primary-color;
+    stroke-dasharray: 50
+  }
 }
 
-.hierarchy__tree__node--leaf {
+.hierarchy__tree__node--internal > circle {
+  fill: $dark-color;
+  stroke: $dark-color;
+  stroke-width: 8px;
+  animation: hierarchy__tree__node--internal 5s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
 .hierarchy__tree__text {

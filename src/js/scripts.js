@@ -23,7 +23,7 @@ let element = document.querySelector('.hierarchy__tree');
 
 var svg = d3.select(element),
     // Obtém o a largura do elemento pai.
-    width = element.parentNode.offsetWidth / 1.5,
+    width = element.parentNode.offsetWidth / 1.3,
     // Obtém a altura do elemento pai.
     height = element.parentNode.offsetHeight / 1.1,
     // Adiciona um grupo para o elemento.
