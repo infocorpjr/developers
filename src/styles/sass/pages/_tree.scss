@@ -1,0 +1,45 @@
+.tree {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.radial__tree {
+  margin: 10px auto;
+  display: block;
+}
+
+.radial__node circle {
+  fill: #999;
+}
+
+.radial__node text {
+  font-size: 0.8em;
+}
+
+.radial__node--internal circle {
+  fill: #555;
+}
+
+.radial__node--internal text {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+@keyframes radial__link {
+  0% {
+    stroke-dasharray: 5;
+  }
+  100% {
+    stroke: $primary-color;
+    stroke-dasharray: 200;
+  }
+}
+
+.radial__link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1px;
+  animation: radial__link 4s infinite alternate;
+  animation-timing-function: ease-in-out;
+}

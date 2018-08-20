@@ -167,7 +167,7 @@
                 aprender como elas funcionam. Uma hora tudo isso entra na sua cabeça e se torna tão natural quanto a luz
                 do dia.
                 <br/>
-                <a class="jknowing__level-link" href="/front">Ok! Vamos lá</a>
+                <a class="jknowing__level-link" href="https://github.com/infocorpjr/developers/wiki/Front-End">Ok! Vamos lá</a>
             </p>
         </li>
         <li class="jknowing__about-item">
@@ -181,7 +181,7 @@
                 usar. E o
                 mercado de trabalho amará isso em você.
                 <br/>
-                <a class="jknowing__level-link" href="/front">Hum... Bacana</a>
+                <a class="jknowing__level-link" href="https://github.com/infocorpjr/developers/wiki/Back-End">Hum... Bacana</a>
             </p>
         </li>
         <li class="jknowing__about-item">
@@ -195,7 +195,7 @@
                 pronto pra
                 se adaptar a essas flutuações. Afinal, decisões importantes são colocadas nas suas mãos.
                 <br/>
-                <a class="jknowing__level-link" href="/front">Mercado! Me aguarde ...</a>
+                <a class="jknowing__level-link" href="https://github.com/infocorpjr/developers/wiki/DevOps">Mercado! Me aguarde ...</a>
             </p>
         </li>
     </ul>
@@ -252,6 +252,7 @@
         Trilhando elas! Durante o percurso, você perceberá se prefere estar envolvido em processo x ou y. No fim, é
         importante
         ter um conhecimento geral básico sobre todas elas, pois a integração entre elas também depende disso.
+        Veja mais em <a class="jway__link" href="https://github.com/infocorpjr/developers/wiki">Infocorp developers wiki</a>.
     </p>
 </div>
 

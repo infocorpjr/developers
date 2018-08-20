@@ -151,8 +151,9 @@
         </div>
     </div>
 </div>
-<div class="hierarchy">
-    <svg xmlns="http://www.w3.org/2000/svg" class="hierarchy__tree"></svg>
+<!-- Radial tree -->
+<div class="tree">
+    <svg class="radial__tree" width="1128" height="1024"></svg>
 </div>
 <!-- Footer | BEM CSS PATTERN -->
 <div class="footer">

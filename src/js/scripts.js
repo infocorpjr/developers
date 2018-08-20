@@ -18,79 +18,77 @@ if (el && el.addEventListener) {
 
 import * as d3 from 'd3';
 
-// O elemento SVG para renderização da árvore.
-let element = document.querySelector('.hierarchy__tree');
-if (element) {
+let svgElement = document.querySelector('.radial__tree');
 
-    var svg = d3.select(element),
-        // Obtém o a largura do elemento pai.
-        width = element.parentNode.offsetWidth / 1.3,
-        // Obtém a altura do elemento pai.
-        height = element.parentNode.offsetHeight / 1,
-        // Adiciona um grupo para o elemento.
-        g = svg.append("g");
+/**
+ *
+ * @param x
+ * @param y
+ * @returns {number[]}
+ */
+function radialPoint(x, y) {
+    return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
+}
 
-// Adiciona o viewBox para o elemento.
-    g.attr('class', 'hierarchy__tree__group');
+/**
+ *
+ * @param data
+ */
+function render(data) {
+    var root = radialTree(s(data));
+    var link = radialG.selectAll(".radial__link")
+        .data(root.links())
+        .enter().append("path")
+        .attr("class", "radial__link")
+        .attr("d", d3.linkRadial()
+            .angle(function (d) {
+                return d.x;
+            })
+            .radius(function (d) {
+                return d.y;
+            }));
+    var node = radialG.selectAll(".radial__node")
+        .data(root.descendants())
+        .enter().append("g")
+        .attr("class", function (d) {
+            return "radial__node" + (d.children ? " radial__node--internal" : " radial__node--leaf");
+        })
+        .attr("transform", function (d) {
+            return "translate(" + radialPoint(d.x, d.y) + ")";
+        });
+    node.append("circle").attr("r", 2.5);
+    node.append("text")
+        .attr("dy", "0.31em")
+        .attr("x", function (d) {
+            return d.x < Math.PI === !d.children ? 6 : -6;
+        })
+        .attr("text-anchor", function (d) {
+            return d.x < Math.PI === !d.children ? "start" : "end";
+        })
+        .attr("transform", function (d) {
+            return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")";
+        })
+        .text(function (d) {
+            return d.id.substring(d.id.lastIndexOf(".") + 1);
+        });
+}
 
-    var cluster = d3.cluster().size([height, width]);
-
-    var stratify = d3.stratify()
+/**/
+if (svgElement) {
+    var radial = d3.select(svgElement);
+    var w = radial.attr("width");
+    var h = radial.attr("height");
+    var radialG = radial.append("g").attr("transform", "translate(" + (w / 2 - 50) + "," + (h / 2 - 70) + ")");
+    var s = d3.stratify()
         .parentId(function (d) {
             return d.id.substring(0, d.id.lastIndexOf("."));
         });
-
-    d3.csv("flare.csv").then(function (data) {
-        /* var root = stratify(data)
-             .sort(function (a, b) {
-                 return (a.height - b.height) || a.id.localeCompare(b.id);
-             });*/
-
-        var root = stratify(data);
-
-        cluster(root);
-
-        var links = g.selectAll(".hierarchy__tree__link")
-            .data(root.descendants().slice(1))
-            .enter().append("path")
-            .attr("class", "hierarchy__tree__link")
-            .attr("d", function (d) {
-                return "M" + d.y + "," + d.x
-                    + "C" + (d.parent.y + 100) + "," + d.x
-                    + " " + (d.parent.y + 100) + "," + d.parent.x
-                    + " " + d.parent.y + "," + d.parent.x;
-            });
-
-        var node = g.selectAll(".hierarchy__tree__node")
-            .data(root.descendants())
-            .enter().append("g")
-            .attr("class", function (d) {
-                return "hierarchy__tree__node" + (d.children ? " hierarchy__tree__node--internal" : " hierarchy__tree__node--leaf");
-            })
-            .attr("transform", function (d) {
-                return "translate(" + d.y + "," + d.x + ")";
-            });
-
-        node.append("circle")
-            .attr("r", 8);
-
-        node.append("text")
-            .attr('class', 'hierarchy__tree__text')
-            .attr("dy", 3)
-            .attr("x", function (d) {
-                // return d.children ? -8 : 8;
-                return 15
-            })
-            .attr('y', function (d) {
-                return d.children ? -20 : 0;
-            })
-            .style("text-anchor", function (d) {
-                // return d.children ? "end" : "start";
-            })
-            .text(function (d) {
-                return d.id.substring(d.id.lastIndexOf(".") + 1);
-            });
-    });
+    var radialTree = d3.tree()
+        .size([2 * Math.PI, 512])
+        .separation(function (a, b) {
+            return (a.parent == b.parent ? 1 : 2) / a.depth;
+        });
+    d3.csv("flare.csv").then(render);
 }
 
 /**
