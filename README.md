@@ -1,2 +1,3 @@
-# developers
-O time de desenvolvimento da Infocorp Júnior 
+# Infocorp Development Team
+
+> O time de desenvolvimento da Infocorp Júnior 
