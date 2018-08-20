@@ -37,7 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="Página do time de desenvolvimento da Infocorp, Empresa Júnior do Instituto de Computação, UFMT.">
-    <META name="keywords" content="web, desenvolvimento, site, infocorp, desenvolvedores">
+    <meta name="keywords" content="web, desenvolvimento, site, infocorp, desenvolvedores">
     <meta name="author" content="Jorge Rodrigues"/>
     <meta name="reply-to" content="jorgerodrigues9@outlook.com">
     <!-- Styles -->

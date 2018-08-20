@@ -58,20 +58,15 @@
     </script>
 </head>
 <body>
-
-
-<!-- Journey featured / BEM CSS PATTERN -->
-<div id="jfeatured" class="jfeatured">
+<div id="jfeatured" class="box jfeatured">
     <img class="jfeatured__background-image" src="../images/developer.png" alt="Developer illustration"
          title="Developer Illustration">
-    <div class="box">
-        <div class="box__top">
-            <div class="box__content">
-
-                <div class="menu">
-                    <div class="menu__left">
-                        <svg class="menu__brand" version="1.1" viewBox="0 0 512 512">
-                            <path class="menu__cog-back" d="M503.467,290.133v-68.267H473.6c-13.38,0-25.574-8.525-29.355-21.367
+    <div class="box__top">
+        <div class="box__content">
+            <div class="menu">
+                <div class="menu__left">
+                    <svg class="menu__brand" version="1.1" viewBox="0 0 512 512">
+                        <path class="menu__cog-back" d="M503.467,290.133v-68.267H473.6c-13.38,0-25.574-8.525-29.355-21.367
 	c-3.942-13.406-9.276-26.206-15.838-38.255c-6.426-11.793-3.917-26.462,5.581-35.959l21.137-21.137l-48.273-48.273l-21.137,21.137
 	c-9.498,9.498-24.166,11.998-35.959,5.572c-12.041-6.562-24.849-11.895-38.255-15.838c-12.843-3.772-21.367-15.957-21.367-29.346
 	V8.533h-68.267V38.4c0,13.38-8.525,25.574-21.367,29.355c-13.406,3.942-26.206,9.276-38.255,15.838
@@ -83,8 +78,8 @@
 	c13.406-3.942,26.206-9.276,38.255-15.838c11.793-6.426,26.462-3.917,35.959,5.572l21.137,21.137l48.273-48.273l-21.137-21.137
 	c-9.498-9.498-11.998-24.166-5.572-35.959c6.562-12.041,11.895-24.849,15.838-38.255c3.772-12.834,15.957-21.359,29.346-21.359
 	H503.467z"/>
-                            <g>
-                                <path class="one-animation menu__cog-lines" d="M290.133,512h-68.267c-4.71,0-8.533-3.823-8.533-8.533V473.6c0-9.822-6.263-18.526-15.241-21.163
+                        <g>
+                            <path class="one-animation menu__cog-lines" d="M290.133,512h-68.267c-4.71,0-8.533-3.823-8.533-8.533V473.6c0-9.822-6.263-18.526-15.241-21.163
 		c-13.824-4.07-27.255-9.626-39.927-16.538c-8.277-4.506-18.901-2.825-25.839,4.113l-21.137,21.137
 		c-3.337,3.337-8.73,3.337-12.066,0L50.85,412.877c-3.337-3.337-3.337-8.73,0-12.066l21.137-21.137
 		c6.929-6.938,8.627-17.562,4.113-25.839c-6.912-12.672-12.467-26.112-16.538-39.927c-2.637-8.977-11.341-15.24-21.163-15.24H8.533
@@ -112,43 +107,42 @@
 		c3.721,12.663,8.815,24.969,15.138,36.582c8.107,14.874,5.214,33.818-7.031,46.071l-15.104,15.104l36.207,36.207l15.104-15.104
 		c12.254-12.254,31.198-15.138,46.071-7.031c11.614,6.323,23.919,11.418,36.582,15.138c16.188,4.762,27.494,20.198,27.494,37.538
 		V494.933z"/>
-                                <path class="menu__cog-lines" d="M256,392.533c-75.281,0-136.533-61.252-136.533-136.533S180.719,119.467,256,119.467
+                            <path class="menu__cog-lines" d="M256,392.533c-75.281,0-136.533-61.252-136.533-136.533S180.719,119.467,256,119.467
 		S392.533,180.719,392.533,256S331.281,392.533,256,392.533z M256,136.533c-65.877,0-119.467,53.589-119.467,119.467
 		S190.123,375.467,256,375.467S375.467,321.877,375.467,256S321.877,136.533,256,136.533z"/>
-                                <path class="menu__cog-lines" d="M204.8,298.667c-2.185,0-4.369-0.836-6.033-2.5l-34.133-34.133c-3.337-3.337-3.337-8.73,0-12.066
+                            <path class="menu__cog-lines" d="M204.8,298.667c-2.185,0-4.369-0.836-6.033-2.5l-34.133-34.133c-3.337-3.337-3.337-8.73,0-12.066
 		l34.133-34.133c3.337-3.337,8.73-3.337,12.066,0c3.337,3.337,3.337,8.73,0,12.066l-28.1,28.1l28.1,28.1
 		c3.337,3.337,3.337,8.73,0,12.066C209.169,297.83,206.985,298.667,204.8,298.667z"/>
-                                <path class="menu__cog-lines" d="M307.2,298.667c-2.185,0-4.369-0.836-6.033-2.5c-3.337-3.337-3.337-8.73,0-12.066l28.1-28.1
+                            <path class="menu__cog-lines" d="M307.2,298.667c-2.185,0-4.369-0.836-6.033-2.5c-3.337-3.337-3.337-8.73,0-12.066l28.1-28.1
 		l-28.1-28.1c-3.337-3.337-3.337-8.73,0-12.066c3.337-3.337,8.73-3.337,12.066,0l34.133,34.133c3.337,3.337,3.337,8.73,0,12.066
 		l-34.133,34.133C311.569,297.83,309.385,298.667,307.2,298.667z"/>
-                                <path class="menu__cog-lines" d="M238.933,315.733c-0.836,0-1.681-0.128-2.509-0.384c-4.506-1.382-7.031-6.161-5.649-10.667
+                            <path class="menu__cog-lines" d="M238.933,315.733c-0.836,0-1.681-0.128-2.509-0.384c-4.506-1.382-7.031-6.161-5.649-10.667
 		l34.133-110.933c1.382-4.514,6.187-7.049,10.667-5.649c4.506,1.382,7.031,6.161,5.649,10.667L247.091,309.7
 		C245.965,313.378,242.586,315.733,238.933,315.733z"/>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="menu__right">
-                        <ul class="menu__navigation">
-                            <li class="menu__links--divider">Voltar para</li>
-                            <li class="menu__links">
-                                <a href="/" class="menu__link">home</a>
-                            </li>
-                            <li class="menu__links--divider">/</li>
-                            <li class="menu__links">
-                                <a href="/#about" class="menu__link">Sobre</a>
-                            </li>
-                            <li class="menu__links--divider">nós</li>
-                        </ul>
-                    </div>
+                        </g>
+                    </svg>
+                </div>
+                <div class="menu__right">
+                    <ul class="menu__navigation">
+                        <li class="menu__links--divider">Voltar para</li>
+                        <li class="menu__links">
+                            <a href="/" class="menu__link">home</a>
+                        </li>
+                        <li class="menu__links--divider">/</li>
+                        <li class="menu__links">
+                            <a href="/#about" class="menu__link">Sobre</a>
+                        </li>
+                        <li class="menu__links--divider">nós</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="box__middle box__middle--larger">
-            <div class="box__content">
-                <h1 class="jfeatured__title">
-                    <b>Infocorp</b> developer's journey<span class="pulse">_</span>
-                </h1>
-            </div>
+    </div>
+    <div class="box__middle box__middle--larger">
+        <div class="box__content">
+            <h1 class="jfeatured__title">
+                <b>Infocorp</b> developer's journey<span class="pulse">_</span>
+            </h1>
         </div>
     </div>
 </div>
@@ -259,19 +253,6 @@
         importante
         ter um conhecimento geral básico sobre todas elas, pois a integração entre elas também depende disso.
     </p>
-</div>
-
-<div class="program">
-    <h3 class="program__title">Divisão & conquista</h3>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero porro praesentium qui velit voluptatibus. A
-        aperiam atque commodi consequatur explicabo impedit ipsam, maxime necessitatibus, officia provident quibusdam
-        repudiandae totam voluptates.
-    </p>
-</div>
-
-<div class="hierarchy">
-    <svg xmlns="http://www.w3.org/2000/svg" class="hierarchy__tree"></svg>
 </div>
 
 <!-- Footer | BEM CSS PATTERN -->

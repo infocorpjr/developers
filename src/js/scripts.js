@@ -20,76 +20,78 @@ import * as d3 from 'd3';
 
 // O elemento SVG para renderização da árvore.
 let element = document.querySelector('.hierarchy__tree');
+if (element) {
 
-var svg = d3.select(element),
-    // Obtém o a largura do elemento pai.
-    width = element.parentNode.offsetWidth / 1.3,
-    // Obtém a altura do elemento pai.
-    height = element.parentNode.offsetHeight / 1.1,
-    // Adiciona um grupo para o elemento.
-    g = svg.append("g");
+    var svg = d3.select(element),
+        // Obtém o a largura do elemento pai.
+        width = element.parentNode.offsetWidth / 1.3,
+        // Obtém a altura do elemento pai.
+        height = element.parentNode.offsetHeight / 1,
+        // Adiciona um grupo para o elemento.
+        g = svg.append("g");
 
 // Adiciona o viewBox para o elemento.
-g.attr('class', 'hierarchy__tree__group');
+    g.attr('class', 'hierarchy__tree__group');
 
-var cluster = d3.cluster().size([height, width]);
+    var cluster = d3.cluster().size([height, width]);
 
-var stratify = d3.stratify()
-    .parentId(function (d) {
-        return d.id.substring(0, d.id.lastIndexOf("."));
+    var stratify = d3.stratify()
+        .parentId(function (d) {
+            return d.id.substring(0, d.id.lastIndexOf("."));
+        });
+
+    d3.csv("flare.csv").then(function (data) {
+        /* var root = stratify(data)
+             .sort(function (a, b) {
+                 return (a.height - b.height) || a.id.localeCompare(b.id);
+             });*/
+
+        var root = stratify(data);
+
+        cluster(root);
+
+        var links = g.selectAll(".hierarchy__tree__link")
+            .data(root.descendants().slice(1))
+            .enter().append("path")
+            .attr("class", "hierarchy__tree__link")
+            .attr("d", function (d) {
+                return "M" + d.y + "," + d.x
+                    + "C" + (d.parent.y + 100) + "," + d.x
+                    + " " + (d.parent.y + 100) + "," + d.parent.x
+                    + " " + d.parent.y + "," + d.parent.x;
+            });
+
+        var node = g.selectAll(".hierarchy__tree__node")
+            .data(root.descendants())
+            .enter().append("g")
+            .attr("class", function (d) {
+                return "hierarchy__tree__node" + (d.children ? " hierarchy__tree__node--internal" : " hierarchy__tree__node--leaf");
+            })
+            .attr("transform", function (d) {
+                return "translate(" + d.y + "," + d.x + ")";
+            });
+
+        node.append("circle")
+            .attr("r", 8);
+
+        node.append("text")
+            .attr('class', 'hierarchy__tree__text')
+            .attr("dy", 3)
+            .attr("x", function (d) {
+                // return d.children ? -8 : 8;
+                return 15
+            })
+            .attr('y', function (d) {
+                return d.children ? -20 : 0;
+            })
+            .style("text-anchor", function (d) {
+                // return d.children ? "end" : "start";
+            })
+            .text(function (d) {
+                return d.id.substring(d.id.lastIndexOf(".") + 1);
+            });
     });
-
-d3.csv("flare.csv").then(function (data) {
-   /* var root = stratify(data)
-        .sort(function (a, b) {
-            return (a.height - b.height) || a.id.localeCompare(b.id);
-        });*/
-
-   var root = stratify(data);
-
-    cluster(root);
-
-    var links = g.selectAll(".hierarchy__tree__link")
-        .data(root.descendants().slice(1))
-        .enter().append("path")
-        .attr("class", "hierarchy__tree__link")
-        .attr("d", function (d) {
-            return "M" + d.y + "," + d.x
-                + "C" + (d.parent.y + 100) + "," + d.x
-                + " " + (d.parent.y + 100) + "," + d.parent.x
-                + " " + d.parent.y + "," + d.parent.x;
-        });
-
-    var node = g.selectAll(".hierarchy__tree__node")
-        .data(root.descendants())
-        .enter().append("g")
-        .attr("class", function (d) {
-            return "hierarchy__tree__node" + (d.children ? " hierarchy__tree__node--internal" : " hierarchy__tree__node--leaf");
-        })
-        .attr("transform", function (d) {
-            return "translate(" + d.y + "," + d.x + ")";
-        });
-
-    node.append("circle")
-        .attr("r", 8);
-
-    node.append("text")
-        .attr('class', 'hierarchy__tree__text')
-        .attr("dy", 3)
-        .attr("x", function (d) {
-            // return d.children ? -8 : 8;
-            return 15
-        })
-        .attr('y', function (d) {
-            return d.children ? -20 : 0;
-        })
-        .style("text-anchor", function (d) {
-            // return d.children ? "end" : "start";
-        })
-        .text(function (d) {
-            return d.id.substring(d.id.lastIndexOf(".") + 1);
-        });
-});
+}
 
 /**
  * Swiper 4.3.3
