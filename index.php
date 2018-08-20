@@ -512,7 +512,7 @@
 <p class="copyright">
     © Copyright 2018 Infocorp - All Rights Reserved
     <small>
-        Design by Jorge Rodrigues / Ilustrações e ícones flaticon.com
+        Design by Jorge Rodrigues / Textos by Luam Cortez / Ilustrações e ícones flaticon.com
     </small>
 </p>
 
