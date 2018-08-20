@@ -301,8 +301,6 @@
     </p>
 </div>
 
-<hr/>
-
 <!-- Projects | BEM CSS PATTERN -->
 <div id="projects" class="projects">
     <div class="projects__left">
