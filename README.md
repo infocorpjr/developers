@@ -1,4 +1,3 @@
-# Infocorp Developer Team
+# Infocorp Development Team
 
- > Bem vindo ao repositório da página do time de desenvolvimento da Infocorp, 
-empresa Júnior do Instituto de Computação da Universidade Federal de Mato Grosso.
+> Time de desenvolvimento da Infocorp Júnior 
